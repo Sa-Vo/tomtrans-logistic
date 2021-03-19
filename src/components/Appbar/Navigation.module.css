@@ -1,0 +1,28 @@
+.NavTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavContacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavContactsItem {
+    margin-right: 5rem;
+}
+
+.NavContactsItem:last-child {
+    margin: 0;
+}
+
+.NavigationBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavigationLink {
+}
+
+.NavigationLinkActive {
+}
