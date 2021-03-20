@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
-import Home from '../views/Home';
-import AboutUs from '../views/AboutUs';
+import Home from '../views/HomePage/Home';
+import AboutUs from '../views/AboutUs/AboutUs';
 import routes from '../routes';
 
 const App = () => (

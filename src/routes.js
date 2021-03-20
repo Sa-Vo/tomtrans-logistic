@@ -2,7 +2,7 @@
 export default {
     home: '/',
     aboutUs: '/about-us',
-    vacancies: '/vacancies',
+    tirParking: '/tir-parking',
     carService: '/car-service',
     hostel: '/hostel',
     contacts: '/contacts',
