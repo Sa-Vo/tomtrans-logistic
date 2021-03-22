@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navigation from './Navigation';
+import {Wrapper} from '../../utils/VariablesStyled';
 
 const Header = styled.header`
     position: absolute;
@@ -13,8 +14,7 @@ const Header = styled.header`
 `;
 
 const HeaderBox = styled.div`
-    max-width: 1300px;
-    margin: 0 auto;
+    ${Wrapper}
 `;
 
 const Appbar = () => (

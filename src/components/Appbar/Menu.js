@@ -8,6 +8,7 @@ import {
     NavItemBox,
     NavContactBox,
     LogoBox,
+    activeStyle,
 } from './MenuStyled';
 import imgLogoPath from '../../assets/Logo.png';
 
@@ -33,22 +34,53 @@ const RightNav = ({ open }) => {
                 </NavTop>
                 <NavItemBox>
                     <NavItem>
-                        <NavLink to={routes.home}>Головна</NavLink>
+                        <NavLink
+                            to={routes.home}
+                            exact
+                            activeStyle={{ color: `${activeStyle}`}}
+                        >
+                            Головна
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={routes.aboutUs}>Про нас</NavLink>
+                        <NavLink
+                            to={routes.aboutUs}
+                            activeStyle={{ color: `${activeStyle}` }}
+                        >
+                            Про нас
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={routes.tirParking}>Tir Parking</NavLink>
+                        <NavLink
+                            to={routes.tirParking}
+                            activeStyle={{ color: `${activeStyle}` }}
+                        >
+                            Tir Parking
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={routes.carService}>Автосервіс</NavLink>
+                        <NavLink
+                            to={routes.carService}
+                            activeStyle={{ color: `${activeStyle}` }}
+                        >
+                            Автосервіс
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={routes.hostel}>Хостел</NavLink>
+                        <NavLink
+                            to={routes.hostel}
+                            activeStyle={{ color: `${activeStyle}` }}
+                        >
+                            Хостел
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={routes.contacts}>Контакти</NavLink>
+                        <NavLink
+                            to={routes.contacts}
+                            activeStyle={{ color: `${activeStyle}` }}
+                        >
+                            Контакти
+                        </NavLink>
                     </NavItem>
                 </NavItemBox>
             </NavMenu>

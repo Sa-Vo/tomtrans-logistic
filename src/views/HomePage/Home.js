@@ -1,13 +1,20 @@
 import React from 'react';
 import { HomeSlide } from './HomeStyled';
 import FromOrder from '../../components/FormOrder/FormOrder';
+import Section from '../../components/Section/Section';
+import CarPark from '../../components/CarPark/CarPark';
+import Slider from '../../components/Slider/Slider';
 
 const Home = () => (
     <>
         <HomeSlide>
             <FromOrder />
         </HomeSlide>
-        <h1>Main page</h1>
+        <Section>
+            <h2>Наш автопарк</h2>
+            <CarPark />
+            <Slider />
+        </Section>
     </>
 );
 

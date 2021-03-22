@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import * as palette from '../../utils/VariablesStyled';
+
+export const activeStyle = '#277a35';
 
 export const NavMenu = styled.ul`
     list-style: none;
@@ -56,8 +59,9 @@ export const NavItem = styled.li`
     &:last-child {
         margin: 0;
     }
+
     a {
-        color: #fff;
+        color: ${palette.white};
         font-size: 20px;
         text-transform: uppercase;
         text-decoration: none;
@@ -65,12 +69,12 @@ export const NavItem = styled.li`
             display: block;
             content: '';
             width: 0;
-            background-color: #277a35;
+            background-color: ${palette.green};
             height: 2px;
             transition: width 350ms cubic-bezier(0.76, 0.02, 0.24, 0.99);
         }
         &:hover {
-            color: #277a35;
+            color: ${palette.green};
             transition: 0.3s;
         }
         &:hover::after {
@@ -81,3 +85,4 @@ export const NavItem = styled.li`
         }
     }
 `;
+

@@ -4,15 +4,15 @@ import Appbar from '../Appbar/Appbar';
 import Footer from '../Footer/Footer';
 
 // const Wrapper = styled.div`
-    // width: 130rem;
-    // max-width: 130rem;
-    // margin: 0 auto;
+// width: 130rem;
+// max-width: 130rem;
+// margin: 0 auto;
 // `;
 
 const Layout = ({ children }) => (
     <div>
         <Appbar />
-        {children}
+        <main>{children}</main>
         <Footer />
     </div>
 );

@@ -1,21 +1,22 @@
 import styled from 'styled-components';
+import * as palette from '../../utils/VariablesStyled';
 
 export const Form = styled.form`
     top: 25%;
     left: 59%;
     position: absolute;
     padding: 45px 71px 45px;
-    background: white;
+    background: ${palette.white};
     border-radius: 20px;
     z-index: 2;
-    box-shadow: 9.057px 7.873px 30.4px 1.6px rgba(0, 0, 0, 0.24);
+    box-shadow: ${palette.shadow};
 
     h3 {
         position: relative;
         z-index: 5;
         margin: 0 0 20px;
         text-align: center;
-        color: #1a1a1a;
+        color: ${palette.black};
         font-size: 30px;
     }
 `;
@@ -38,7 +39,7 @@ export const InputBox = styled.div`
 
         &:focus {
             outline: 0;
-            border-color: #277a35;
+            border-color: ${palette.green};
         }
     }
 
@@ -60,26 +61,26 @@ export const InputBox = styled.div`
         font-size: 14px;
         font-weight: 400;
         outline: 0;
-        color: #1a1a1a;
+        color: ${palette.black};
     }
 `;
 
 export const ButtonForm = styled.button`
     border-radius: 9px;
-    background-color: #fff;
+    background-color: ${palette.white};
     width: 349px;
     height: 62px;
     font-size: 29px;
-    color: #1a1a1a;
-    border: solid 2px #277a35;
+    color: ${palette.black};
+    border: solid 2px ${palette.green};
     cursor: pointer;
     outline: none;
     transition: all 0.7s;
 
     &:hover {
         transition: all 0.3s;
-        color: #fff;
-        background-color: #277a35;
+        color: ${palette.white};
+        background-color: ${palette.green};
         transform: translateY(-1px);
     }
     &::active {
