@@ -1,7 +1,8 @@
 import React from 'react';
 import SliderCard from './SliderCard';
-import { Slider, PrevArrow, NextArrow, SliderBox } from './SliderStyled';
+import { Slider, PrevArrow, NextArrow, SliderBox, ArrowBox } from './SliderStyled';
 import SLideOne from '../../assets/Slide-1.png';
+import SLideTwo from '../../assets/Slide-2.png';
 import arrowLeft from '../../assets/left-arrow.png';
 import rightLeft from '../../assets/right-arrow.png';
 
@@ -21,12 +22,12 @@ class SliderCar extends React.Component {
             },
 
             {
-                image: `${SLideOne}`,
-                title: 'Поїзд',
+                image: `${SLideTwo}`,
+                title: 'Платформа',
                 textOne:
-                    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, molestias.',
+                    'Напівпричіп тентований призначений для перевезення 20-ти тонних вантажів. Дозволяє завантажувати зверху, збоку, і ззаду або через ворота. ',
                 textTwo:
-                    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, molestias.',
+                    '',
                 lengthInfo: '13 620мм',
                 widthInfo: '2 550мм',
                 heightInfo: '2 600мм',
@@ -57,13 +58,17 @@ class SliderCar extends React.Component {
         return (
             <Slider>
                 <PrevArrow onClick={this.prevClick}>
-                    <img src={arrowLeft} alt="" />
+                    <ArrowBox>
+                        <img src={arrowLeft} alt="" />
+                    </ArrowBox>
                 </PrevArrow>
                 <SliderBox ref={this.myRef}>
                     <SliderCard data={data} />
                 </SliderBox>
                 <NextArrow onClick={this.nextClick}>
-                    <img src={rightLeft} alt="" />
+                    <ArrowBox>
+                        <img src={rightLeft} alt="" />
+                    </ArrowBox>
                 </NextArrow>
             </Slider>
         );

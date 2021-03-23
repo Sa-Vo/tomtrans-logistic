@@ -13,15 +13,15 @@ const carPark = () => {
         {
             id: 1,
             count: '21',
-            infoTop: 'машин',
-            infoBottom: 'в автопарку',
+            infoTop: 'тонн',
+            infoBottom: 'вантажопідйомність',
         },
 
         {
             id: 2,
             count: '86',
-            infoTop: 'машин',
-            infoBottom: 'в автопарку',
+            infoTop: 'm3',
+            infoBottom: 'об’єм причепа',
         },
     ];
 

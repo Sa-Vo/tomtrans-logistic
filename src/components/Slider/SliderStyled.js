@@ -4,15 +4,22 @@ import * as palette from '../../utils/VariablesStyled';
 export const Slider = styled.div`
     display: flex;
     align-items: center;
-    max-width: 1240px;
+    max-width: 1300px;
     width: 100%;
     min-height: 30rem;
     /* position: absolute; */
     top: 50%;
     left: 50%;
     /* transform: translate(-50%, -50%); */
+    margin: 100px auto;
+    /* padding: 10 0rem; */
+`;
+
+export const ArrowBox = styled.div`
+    display: block;
     margin: auto;
-    /* padding: 0 2rem; */
+    width: 2rem;
+    height: 2rem;
 `;
 
 export const PrevArrow = styled.div`
@@ -20,6 +27,12 @@ export const PrevArrow = styled.div`
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    display: flex;
+    box-shadow: ${palette.shadow};
+    &:hover{
+        background-color: rgb(64, 179, 70);
+        transition: 0.5s;    
+    }
 `;
 
 export const NextArrow = styled.div`
@@ -27,6 +40,12 @@ export const NextArrow = styled.div`
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    display: flex;
+    box-shadow: ${palette.shadow};
+    &:hover{
+        background-color: rgb(64, 179, 70);
+        transition: 0.5s;
+    }
 `;
 
 export const SliderBox = styled.div`
@@ -65,7 +84,7 @@ export const SLiderImgBox = styled.div`
 
 export const SliderInfoBox = styled.div`
     padding: 3rem 2rem;
-    background-color: #b1b1b1;
+    background-color: #f4f4f4;
     display: flex;
 
     @media ${palette.device.laptop} {

@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import * as palette from '../../utils/VariablesStyled';
 
 export const BoxInfoCar = styled.ul`
+    list-style:none;
     display: flex;
     justify-content: space-between;
+    margin: 100px 0;
 `;
 
 export const BoxInfoCarItem = styled.li`
-    /* display: flex; */
+    display: flex;
     align-items: center;
 `;
 
@@ -21,19 +23,22 @@ export const Circle = styled.div`
     vertical-align: middle;
     border-radius: 50%;
     font-weight: bold;
-    background: yellow;
+    background: white;
     color: rgb(64, 179, 70);
     text-shadow: 4.31px 5.516px 5.74px rgba(0, 0, 0, 0.18);
+    box-shadow: 4.31px 5.516px 5.74px rgba(0, 0, 0, 0.18);
 `;
 
 export const BoxDescrCar = styled.div`
     margin-left: -15px;
-
+    
     p {
         font-size: 30px;
     }
 
     span {
+        font-weight: 400;
         font-size: 20px;
+        color: rgba(0,0,0,0.7);
     }
 `;
