@@ -7,6 +7,7 @@ import {
     NavItem,
     NavItemBox,
     NavContactBox,
+    NavContactBoxItem,
     LogoBox,
     activeStyle,
 } from './MenuStyled';
@@ -22,14 +23,14 @@ const RightNav = ({ open }) => {
                     </LogoBox>
 
                     <NavContactBox>
-                        <div>
+                        <NavContactBoxItem>
                             <p>E-mail</p>
                             <p>mango@gmail.com</p>
-                        </div>
-                        <div>
+                        </NavContactBoxItem>
+                        <NavContactBoxItem>
                             <p>Телефон</p>
                             <p>0677774327</p>
-                        </div>
+                        </NavContactBoxItem>
                     </NavContactBox>
                 </NavTop>
                 <NavItemBox>
@@ -37,7 +38,7 @@ const RightNav = ({ open }) => {
                         <NavLink
                             to={routes.home}
                             exact
-                            activeStyle={{ color: `${activeStyle}`}}
+                            activeStyle={{ color: `${activeStyle}` }}
                         >
                             Головна
                         </NavLink>

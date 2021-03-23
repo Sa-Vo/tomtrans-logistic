@@ -3,10 +3,11 @@ import * as palette from '../../utils/VariablesStyled';
 
 export const activeStyle = '#277a35';
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled.div`
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding-top: 1rem;
     /* flex-flow: row nowrap; */
 
     @media (max-width: 768px) {
@@ -27,15 +28,32 @@ export const NavMenu = styled.ul`
 export const NavTop = styled.section`
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
 `;
 
 export const LogoBox = styled.div`
     width: 9rem;
 `;
 
-export const NavContactBox = styled.article`
+export const NavContactBox = styled.ul`
+    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: space-between;
+`;
+
+export const NavContactBoxItem = styled.li`
+    margin-right: 4rem;
+    p {
+        color: white;
+        &:nth-child(1) {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    &:last-child {
+        margin: 0;
+    }
 `;
 
 export const NavItemBox = styled.ul`
@@ -85,4 +103,3 @@ export const NavItem = styled.li`
         }
     }
 `;
-

@@ -1,6 +1,42 @@
 import styled from 'styled-components';
 import * as palette from '../../utils/VariablesStyled';
 
+export const HeaderText = styled.div`
+    padding-top: 30rem;
+    width: 25rem;
+    margin: 0 auto;
+    text-align: center;
+
+    div {
+        padding: 1rem;
+        z-index: 9;
+        border-radius: 5px;
+        color: white;
+        background-color: #80808090;
+    }
+    @media (min-width: 425px) and (max-width: 1023px) {
+        width: 30rem;
+        h2 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 3rem;
+        }
+    }
+
+    @media ${palette.device.laptop} {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        h2 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 3rem;
+        }
+    }
+`;
+
 export const Form = styled.form`
     top: 25%;
     left: 59%;
@@ -10,21 +46,45 @@ export const Form = styled.form`
     border-radius: 20px;
     z-index: 2;
     box-shadow: ${palette.shadow};
+    display: none;
+    /* top: 18%;
+    left: 9%;
+    padding: 30px;
+    position: absolute;
+    background: ${palette.white};
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: ${palette.shadow};
 
-    h3 {
+    @media ${palette.device.mobileL} {
+        left: 14%;
+    }
+
+    @media ${palette.device.mobileL} {
+        left: 14.5%;
+    }
+
+    @media ${palette.device.tablet} {
+        left: 50%;
+    } */
+
+    @media ${palette.device.laptop} {
+        display: block;
+    }
+    */ h3 {
         position: relative;
         z-index: 5;
         margin: 0 0 20px;
         text-align: center;
         color: ${palette.black};
-        font-size: 30px;
+        font-size: 20px;
     }
 `;
 
 export const InputBox = styled.div`
     position: relative;
     margin-bottom: 44px;
-    width: 350px;
+    width: 250px;
 
     input {
         display: block;
@@ -68,9 +128,9 @@ export const InputBox = styled.div`
 export const ButtonForm = styled.button`
     border-radius: 9px;
     background-color: ${palette.white};
-    width: 349px;
+    width: 120px;
     height: 62px;
-    font-size: 29px;
+    font-size: 15px;
     color: ${palette.black};
     border: solid 2px ${palette.green};
     cursor: pointer;

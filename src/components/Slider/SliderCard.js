@@ -1,4 +1,13 @@
 import React from 'react';
+import {
+    Card,
+    SLiderImgBox,
+    SliderInfoBox,
+    SliderTitle,
+    SLiderSubText,
+    SizeBox,
+    SizeBoxItem,
+} from './SliderStyled';
 
 class SliderCard extends React.Component {
     render() {
@@ -11,33 +20,37 @@ class SliderCard extends React.Component {
         return (
             <>
                 {data.map((item, idx) => (
-                    <div className="card" key={idx}>
-                        <div>
+                    <Card key={idx}>
+                        <SLiderImgBox>
                             <img src={item.image} alt="" />
-                        </div>
+                        </SLiderImgBox>
 
-                        <div>
-                            <h5>{item.title}</h5>
-                            <p>{item.textOne}</p>
-                            <p>{item.textTwo}</p>
+                        <SliderInfoBox>
                             <div>
-                                <div>
+                                <SliderTitle>{item.title}</SliderTitle>
+                                <SLiderSubText>{item.textOne}</SLiderSubText>
+                                <SLiderSubText>
+                                    <b>{item.textTwo}</b>
+                                </SLiderSubText>
+                            </div>
+                            <SizeBox>
+                                <SizeBoxItem>
                                     <p>{size.length}</p>
                                     <p>{item.widthInfo}</p>
-                                </div>
+                                </SizeBoxItem>
 
-                                <div>
+                                <SizeBoxItem>
                                     <p>{size.width}</p>
                                     <p>{item.lengthInfo}</p>
-                                </div>
+                                </SizeBoxItem>
 
-                                <div>
+                                <SizeBoxItem>
                                     <p>{size.height}</p>
                                     <p>{item.heightInfo}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </SizeBoxItem>
+                            </SizeBox>
+                        </SliderInfoBox>
+                    </Card>
                 ))}
             </>
         );

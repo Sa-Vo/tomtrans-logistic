@@ -7,7 +7,7 @@ export const BoxInfoCar = styled.ul`
 `;
 
 export const BoxInfoCarItem = styled.li`
-    display: flex;
+    /* display: flex; */
     align-items: center;
 `;
 
