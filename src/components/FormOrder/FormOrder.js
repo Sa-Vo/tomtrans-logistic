@@ -7,7 +7,6 @@ const FormOrder = () => (
                 <h2>
                     Міжнародні <br /> перевезення
                 </h2>
-                <p>В країни Європи</p>
             </div>
         </HeaderText>
         <Form name="contact" method="post">

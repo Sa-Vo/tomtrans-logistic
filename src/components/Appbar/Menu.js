@@ -25,11 +25,11 @@ const RightNav = ({ open }) => {
                     <NavContactBox>
                         <NavContactBoxItem>
                             <p>E-mail</p>
-                            <p>mango@gmail.com</p>
+                            <p>tomtranslogistic@ukr.net</p>
                         </NavContactBoxItem>
                         <NavContactBoxItem>
                             <p>Телефон</p>
-                            <p>0677774327</p>
+                            <p>+380(99)973-68-23</p>
                         </NavContactBoxItem>
                     </NavContactBox>
                 </NavTop>
@@ -43,14 +43,7 @@ const RightNav = ({ open }) => {
                             Головна
                         </NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink
-                            to={routes.aboutUs}
-                            activeStyle={{ color: `${activeStyle}` }}
-                        >
-                            Про нас
-                        </NavLink>
-                    </NavItem>
+                   
                     <NavItem>
                         <NavLink
                             to={routes.tirParking}
@@ -59,6 +52,7 @@ const RightNav = ({ open }) => {
                             Tir Parking
                         </NavLink>
                     </NavItem>
+                    
                     <NavItem>
                         <NavLink
                             to={routes.carService}
@@ -67,6 +61,7 @@ const RightNav = ({ open }) => {
                             Автосервіс
                         </NavLink>
                     </NavItem>
+
                     <NavItem>
                         <NavLink
                             to={routes.hostel}
@@ -75,6 +70,16 @@ const RightNav = ({ open }) => {
                             Хостел
                         </NavLink>
                     </NavItem>
+
+                    <NavItem>
+                        <NavLink
+                            to={routes.aboutUs}
+                            activeStyle={{ color: `${activeStyle}` }}
+                        >
+                            Про нас
+                        </NavLink>
+                    </NavItem>
+                    
                     <NavItem>
                         <NavLink
                             to={routes.contacts}
