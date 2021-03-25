@@ -36,12 +36,12 @@ class SliderCard extends React.Component {
                             <SizeBox>
                                 <SizeBoxItem>
                                     <p>{size.length}</p>
-                                    <p>{item.widthInfo}</p>
+                                    <p>{item.lengthInfo}</p>
                                 </SizeBoxItem>
 
                                 <SizeBoxItem>
                                     <p>{size.width}</p>
-                                    <p>{item.lengthInfo}</p>
+                                    <p>{item.widthInfo}</p>
                                 </SizeBoxItem>
 
                                 <SizeBoxItem>

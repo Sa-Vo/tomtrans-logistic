@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as palette from '../../utils/VariablesStyled';
+import * as palette from '../../../../utils/VariablesStyled';
 
 export const HeaderText = styled.div`
     padding-top: 30rem;
@@ -38,15 +38,14 @@ export const HeaderText = styled.div`
 `;
 
 export const Form = styled.form`
-    top: 25%;
+    /* top: 25%;
     left: 59%;
-    position: absolute;
+    position: absolute; */
     padding: 45px 71px 45px;
     background: ${palette.white};
     border-radius: 20px;
     z-index: 2;
     box-shadow: ${palette.shadow};
-    display: none;
     /* top: 18%;
     left: 9%;
     padding: 30px;
@@ -68,17 +67,14 @@ export const Form = styled.form`
         left: 50%;
     } */
 
-    @media ${palette.device.laptop} {
-        display: block;
-    }
-    */ h3 {
+    /* h3 {
         position: relative;
         z-index: 5;
         margin: 0 0 20px;
         text-align: center;
         color: ${palette.black};
         font-size: 20px;
-    }
+    } */
 `;
 
 export const InputBox = styled.div`

@@ -2,13 +2,6 @@ import React from 'react';
 import { HeaderText, Form, InputBox, ButtonForm } from './FormOrderStyled';
 const FormOrder = () => (
     <>
-        <HeaderText>
-            <div>
-                <h2>
-                    Міжнародні <br /> перевезення
-                </h2>
-            </div>
-        </HeaderText>
         <Form name="contact" method="post">
             <h3>Швидка заявка</h3>
             <input type="hidden" name="form-name" value="contact" />

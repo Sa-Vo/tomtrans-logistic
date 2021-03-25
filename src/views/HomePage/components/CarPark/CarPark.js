@@ -1,5 +1,11 @@
 import React from 'react';
-import { BoxInfoCar, BoxInfoCarItem, Circle, BoxDescrCar } from './CarParkStyled';
+import { useSpring, animated } from 'react-spring';
+import {
+    BoxInfoCar,
+    BoxInfoCarItem,
+    Circle,
+    BoxDescrCar,
+} from './CarParkStyled';
 
 const carPark = () => {
     const infoCarPark = [
@@ -30,9 +36,7 @@ const carPark = () => {
             {infoCarPark.map(info => (
                 <BoxInfoCarItem key={info.id}>
                     <div>
-                        <Circle>
-                            {info.count}
-                        </Circle>
+                        <Circle>{info.count}</Circle>
                     </div>
                     <BoxDescrCar>
                         <p>{info.infoTop}</p>

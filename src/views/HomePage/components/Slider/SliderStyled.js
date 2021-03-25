@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as palette from '../../utils/VariablesStyled';
+import * as palette from '../../../../utils/VariablesStyled';
 
 export const Slider = styled.div`
     display: flex;
