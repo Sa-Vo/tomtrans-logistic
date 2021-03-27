@@ -11,6 +11,25 @@ export const Wrapper = props => `
     margin: 0 auto;
 `;
 
+export const Button = () => `
+    border-radius: 9px;
+    color: ${black};
+    border: solid 2px ${green};
+    cursor: pointer;
+    outline: none;
+    transition: all 0.7s;
+
+    &:hover {
+        transition: all 0.3s;
+        color: ${white};
+        background-color: ${green};
+        transform: translateY(-1px);
+    }
+    &::active {
+        transform: translateY(-3px);
+    }
+`;
+
 export const H_1 = '80px';
 export const H_2 = '45px';
 export const H_3 = '30px';

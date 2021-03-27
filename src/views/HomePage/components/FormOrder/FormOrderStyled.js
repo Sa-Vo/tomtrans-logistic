@@ -44,7 +44,7 @@ export const Form = styled.form`
     padding: 45px 71px 45px;
     background: ${palette.white};
     border-radius: 20px;
-    z-index: 2;
+    z-index: 3;
     box-shadow: ${palette.shadow};
     /* top: 18%;
     left: 9%;
@@ -122,24 +122,9 @@ export const InputBox = styled.div`
 `;
 
 export const ButtonForm = styled.button`
-    border-radius: 9px;
-    background-color: ${palette.white};
     width: 120px;
     height: 62px;
     font-size: 15px;
-    color: ${palette.black};
-    border: solid 2px ${palette.green};
-    cursor: pointer;
-    outline: none;
-    transition: all 0.7s;
-
-    &:hover {
-        transition: all 0.3s;
-        color: ${palette.white};
-        background-color: ${palette.green};
-        transform: translateY(-1px);
-    }
-    &::active {
-        transform: translateY(-3px);
-    }
+    background-color: ${palette.white};
+    ${palette.Button}
 `;

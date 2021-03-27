@@ -1,11 +1,6 @@
 import React from 'react';
 import { SectionBox } from './SectionStyled';
 
-const Section = ({ title, children }) => (
-    <SectionBox>
-        <h2>{title}</h2>
-        {children}
-    </SectionBox>
-);
+const Section = ({ children }) => <SectionBox>{children}</SectionBox>;
 
 export default Section;

@@ -43,9 +43,11 @@ class SliderCar extends React.Component {
                         <img src={arrowLeft} alt="" />
                     </ArrowBox>
                 </PrevArrow>
+
                 <SliderBox ref={this.myRef}>
                     <SliderCard data={data} />
                 </SliderBox>
+
                 <NextArrow onClick={this.nextClick}>
                     <ArrowBox>
                         <img src={rightLeft} alt="" />

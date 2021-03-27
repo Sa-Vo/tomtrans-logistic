@@ -13,9 +13,9 @@ class SliderCard extends React.Component {
     render() {
         const { data } = this.props;
         const size = {
-            length: 'Довжина',
-            width: 'Ширина',
-            height: 'Висота',
+            length: 'Довжина:',
+            width: 'Ширина:',
+            height: 'Висота:',
         };
         return (
             <>

@@ -7,12 +7,9 @@ export const Slider = styled.div`
     max-width: 1300px;
     width: 100%;
     min-height: 30rem;
-    /* position: absolute; */
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
     margin: 100px auto;
-    /* padding: 10 0rem; */
 `;
 
 export const ArrowBox = styled.div`
@@ -29,9 +26,9 @@ export const PrevArrow = styled.div`
     border-radius: 50%;
     display: flex;
     box-shadow: ${palette.shadow};
-    &:hover{
+    &:hover {
         background-color: rgb(64, 179, 70);
-        transition: 0.5s;    
+        transition: 0.5s;
     }
 `;
 
@@ -42,7 +39,7 @@ export const NextArrow = styled.div`
     border-radius: 50%;
     display: flex;
     box-shadow: ${palette.shadow};
-    &:hover{
+    &:hover {
         background-color: rgb(64, 179, 70);
         transition: 0.5s;
     }
@@ -50,6 +47,7 @@ export const NextArrow = styled.div`
 
 export const SliderBox = styled.div`
     width: 100%;
+    margin: 0 3rem 0 3rem;
     display: flex;
     overflow: hidden;
     box-shadow: ${palette.shadow};
@@ -59,9 +57,6 @@ export const SliderBox = styled.div`
 
 export const Card = styled.div`
     min-width: 100%;
-    overflow: hidden;
-    display: block;
-
     @media ${palette.device.laptop} {
         display: flex;
     }
@@ -72,7 +67,7 @@ export const SLiderImgBox = styled.div`
     margin: auto;
 
     @media ${palette.device.laptop} {
-        width: 65%;
+        width: 70%;
     }
     img {
         width: 100%;
@@ -83,23 +78,27 @@ export const SLiderImgBox = styled.div`
 `;
 
 export const SliderInfoBox = styled.div`
-    padding: 3rem 2rem;
+    padding: 2rem 2rem 0 2rem;
     background-color: #f4f4f4;
-    display: flex;
+    display: block;
 
     @media ${palette.device.laptop} {
-        width: 35%;
+        width: 30%;
         display: block;
     }
 `;
 
 export const SliderTitle = styled.h5`
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    @media ${palette.device.laptop} {
+        font-size: 3rem;
+    }
 `;
 
 export const SLiderSubText = styled.p`
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 `;
 
 export const SizeBox = styled.div`
@@ -112,56 +111,15 @@ export const SizeBox = styled.div`
 export const SizeBoxItem = styled.div`
     display: flex;
     justify-content: space-between;
-    max-width: 200px;
+    max-width: 20rem;
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
+        @media ${palette.device.laptop} {
+            font-size: 1.8rem;
+            &:last-child {
+                color: gray;
+            }
+        }
     }
 `;
-
-// export const Slider = styled.div`
-//     display: flex;
-//     align-items: center;
-// `;
-
-// export const SliderItem = styled.div`
-//     display: block;
-
-//     @media ${palette.device.laptop} {
-//         display: flex;
-//     }
-// `;
-
-// export const SliderImgBox = styled.div`
-//     padding: 50px 20px;
-//     background-color: white;
-// `;
-
-// export const SliderInfoBox = styled.div`
-//     background-color: #afafaf;
-//     padding: 20px;
-//     display: flex;
-//     p {
-//         font-size: 20px;
-//     }
-//     @media ${palette.device.laptop} {
-//         display: block;
-//     }
-// `;
-
-// export const SliderTitle = styled.h6`
-//     font-size: 30px;
-//     font-weight: 500;
-// `;
-
-// export const SliderSizeBox = styled.div`
-//     width: 50%;
-//     div {
-//         display: flex;
-//     }
-
-//     @media ${palette.device.laptop} {
-//         margin-top: 20px;
-//         width: 100%;
-//     }
-// `;

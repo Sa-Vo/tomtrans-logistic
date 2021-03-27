@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+
 import {
     BoxInfoCar,
     BoxInfoCarItem,
@@ -7,7 +7,7 @@ import {
     BoxDescrCar,
 } from './CarParkStyled';
 
-const carPark = () => {
+const CarPark = () => {
     const infoCarPark = [
         {
             id: 0,
@@ -20,7 +20,7 @@ const carPark = () => {
             id: 1,
             count: '21',
             infoTop: 'тонн',
-            infoBottom: 'вантажопідйомність',
+            infoBottom: 'вантажність',
         },
 
         {
@@ -48,4 +48,4 @@ const carPark = () => {
     );
 };
 
-export default carPark;
+export default CarPark;
