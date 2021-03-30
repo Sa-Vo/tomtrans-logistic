@@ -12,7 +12,6 @@ class Service extends React.Component {
             <ServiceBox>
                 {serviceData.map((item, idx) => (
                     <ServiceItem key={idx}>
-                        <div></div>
                         <img src={item.img} alt={item.img} />
                         <ServiceTitle>{item.title}</ServiceTitle>
                     </ServiceItem>
