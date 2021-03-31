@@ -8,8 +8,7 @@ import {
     ArrowBox,
 } from './SliderStyled';
 import SLiderData from './SliderData';
-import arrowLeft from '../../../../assets/left-arrow.png';
-import rightLeft from '../../../../assets/right-arrow.png';
+import ArrowSlider from './ArrowSlider';
 
 class SliderCar extends React.Component {
     state = {
@@ -38,21 +37,11 @@ class SliderCar extends React.Component {
         const { data } = this.state;
         return (
             <Slider>
-                <PrevArrow onClick={this.prevClick}>
-                    <ArrowBox>
-                        <img src={arrowLeft} alt="" />
-                    </ArrowBox>
-                </PrevArrow>
-
                 <SliderBox ref={this.myRef}>
                     <SliderCard data={data} />
                 </SliderBox>
 
-                <NextArrow onClick={this.nextClick}>
-                    <ArrowBox>
-                        <img src={rightLeft} alt="" />
-                    </ArrowBox>
-                </NextArrow>
+                <ArrowSlider prev={this.prevClick} next={this.nextClick} />
             </Slider>
         );
     }

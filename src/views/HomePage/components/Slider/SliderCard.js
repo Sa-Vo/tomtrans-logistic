@@ -3,6 +3,7 @@ import {
     Card,
     SLiderImgBox,
     SliderInfoBox,
+    ContentBox,
     SliderTitle,
     SLiderSubText,
     SizeBox,
@@ -26,13 +27,13 @@ class SliderCard extends React.Component {
                         </SLiderImgBox>
 
                         <SliderInfoBox>
-                            <div>
+                            <ContentBox>
                                 <SliderTitle>{item.title}</SliderTitle>
                                 <SLiderSubText>{item.textOne}</SLiderSubText>
                                 <SLiderSubText>
                                     <b>{item.textTwo}</b>
                                 </SLiderSubText>
-                            </div>
+                            </ContentBox>
                             <SizeBox>
                                 <SizeBoxItem>
                                     <p>{size.length}</p>

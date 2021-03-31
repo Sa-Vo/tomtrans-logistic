@@ -16,7 +16,7 @@ import {
     SocialBox,
     Map,
 } from './LocationStyled';
-import FacebookLogo from '../../../../assets/facebook-logo.png';
+
 
 const Location = () => (
     <LocationBox>

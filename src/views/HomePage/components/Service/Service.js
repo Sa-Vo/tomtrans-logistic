@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    ServiceBox,
-    ServiceItem,
-    ServiceTitle,
-} from './ServiceStyled';
+import { ServiceBox, ServiceItem, ServiceTitle } from './ServiceStyled';
 
 class Service extends React.Component {
     render() {
@@ -12,7 +8,18 @@ class Service extends React.Component {
             <ServiceBox>
                 {serviceData.map((item, idx) => (
                     <ServiceItem key={idx}>
-                        <img src={item.img} alt={item.img} />
+                        <picture>
+                            <source
+                                srcSet={`${item.imgSmall} 1x`}
+                                media="(max-width: 1023px)"
+                            />
+                            <img
+                                srcSet={`${item.imgLarge} 2x`}
+                                alt={item.title}
+                                width={940}
+                            />
+                        </picture>
+
                         <ServiceTitle>{item.title}</ServiceTitle>
                     </ServiceItem>
                 ))}

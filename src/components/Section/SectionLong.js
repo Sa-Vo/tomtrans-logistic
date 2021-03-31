@@ -4,10 +4,15 @@ import * as palette from '../../utils/VariablesStyled';
 
 const SectionBox = styled.section`
     padding-top: 4rem;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 6rem;
     background-color: white;
     box-shadow: ${palette.shadow};
+
+    &:nth-child(3) {
+        margin: 0 2rem;
+        border-radius: 3rem;
+    }
 
     h2 {
         font-size: ${palette.H_2};

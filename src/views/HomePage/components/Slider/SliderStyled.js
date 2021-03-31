@@ -2,14 +2,13 @@ import styled from 'styled-components';
 import * as palette from '../../../../utils/VariablesStyled';
 
 export const Slider = styled.div`
-    display: flex;
-    align-items: center;
     max-width: 1300px;
-    width: 100%;
+    /* width: 100%; */
     min-height: 30rem;
     top: 50%;
-    left: 50%;
-    margin: 100px auto;
+    position: relative;
+    /* margin: 100px auto; */
+    padding: 2rem;
 `;
 
 export const ArrowBox = styled.div`
@@ -47,7 +46,6 @@ export const NextArrow = styled.div`
 
 export const SliderBox = styled.div`
     width: 100%;
-    margin: 0 3rem 0 3rem;
     display: flex;
     overflow: hidden;
     box-shadow: ${palette.shadow};
@@ -81,10 +79,24 @@ export const SliderInfoBox = styled.div`
     padding: 2rem 2rem 0 2rem;
     background-color: #f4f4f4;
     display: block;
+    height: 100%;
+    @media ${palette.device.tablet} {
+        display: flex;
+        /* justify-content: space-between; */
+    }
 
     @media ${palette.device.laptop} {
         width: 30%;
         display: block;
+    }
+`;
+
+export const ContentBox = styled.div`
+    @media ${palette.device.tablet} {
+        width: 70%;
+    }
+    @media ${palette.device.laptop} {
+        width: 100%;
     }
 `;
 
@@ -103,7 +115,11 @@ export const SLiderSubText = styled.p`
 
 export const SizeBox = styled.div`
     margin: 0;
+    @media ${palette.device.tablet} {
+        width: 30%;
+    }
     @media ${palette.device.laptop} {
+        width: 100%;
         margin-top: 3rem;
     }
 `;
@@ -115,6 +131,9 @@ export const SizeBoxItem = styled.div`
     p {
         font-size: 1.5rem;
         margin-bottom: 1rem;
+        &:last-child {
+            color: grey;
+        }
         @media ${palette.device.laptop} {
             font-size: 1.8rem;
             &:last-child {

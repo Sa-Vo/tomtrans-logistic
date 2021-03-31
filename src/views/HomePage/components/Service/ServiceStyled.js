@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import * as palette from '../../../../utils/VariablesStyled';
 
 export const ServiceBox = styled.ul`
-    padding: 4rem 3rem;
+    padding: 4rem 1rem;
     max-width: 130rem;
     margin: 0 auto;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    @media ${palette.device.laptop} {
+        display: flex;
+    }
 `;
 
 export const ServiceItem = styled.li`
@@ -16,7 +18,23 @@ export const ServiceItem = styled.li`
     border-radius: 12px;
     box-shadow: ${palette.shadow};
     transition: all 0.5s ease;
-    background-color: #8fbd35;
+    margin: 0 auto 3rem;
+    &:last-child {
+        margin: 0 auto;
+    }
+    @media ${palette.device.mobileL} {
+        width: 35rem;
+    }
+    @media ${palette.device.tablet} {
+        width: 60rem;
+    }
+    @media ${palette.device.laptop} {
+        margin: 0 3rem 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
 
     &:after {
         content: '';
@@ -53,11 +71,19 @@ export const ServiceTitle = styled.h3`
     transition: all 0.5s ease;
     position: absolute;
     color: black;
+    top: 50%;
+    transform: translate(0, -50%);
     font-size: 3rem;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, 0);
     width: 100%;
     text-align: center;
     z-index: 1;
+    @media ${palette.device.tablet} {
+        font-size: 6rem;
+    }
+    @media ${palette.device.laptop} {
+        font-size: 3rem;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, 0);
+    }
 `;

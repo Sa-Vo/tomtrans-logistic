@@ -29,10 +29,10 @@ const Home = () => (
             <h2>Наші партнери</h2>
             <SliderPartners />
         </SectionLong>
-        <Section>
+        {/* <Section>
             <h2>Де нас знайти</h2>
             <Location />
-        </Section>
+        </Section> */}
     </>
 );
 
