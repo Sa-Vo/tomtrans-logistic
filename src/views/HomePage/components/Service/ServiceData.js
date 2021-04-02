@@ -4,9 +4,9 @@ import SlideCarServiceLarge from '../../../../assets/service-carservice.png';
 import SlideHostelLarge from '../../../../assets/service-hostel.png';
 
 import SlideLogSmall from '../../../../assets/ServiceSmall/service-logistics-small.png';
-import SlideParkingSmall from '../../../../assets/ServiceSmall/service-logistics-small.png';
-import SlideCarServiceSmall from '../../../../assets/ServiceSmall/service-logistics-small.png';
-import SlideHostelSmall from '../../../../assets/ServiceSmall/service-logistics-small.png';
+import SlideParkingSmall from '../../../../assets/ServiceSmall/service-tirparking-small.png';
+import SlideCarServiceSmall from '../../../../assets/ServiceSmall/service-carservice-small.png';
+import SlideHostelSmall from '../../../../assets/ServiceSmall/service-hostel-small.png';
 
 const ServiceData = [
     {
@@ -18,7 +18,7 @@ const ServiceData = [
 
     {
         id: 1,
-        title: 'Автосервіс',
+        title: 'TIR Parking',
         imgSmall: `${SlideParkingSmall}`,
         imgLarge: `${SlideParkingLarge}`,
     },

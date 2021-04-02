@@ -1,10 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faFacebook,
+    faWhatsapp,
     faFacebookMessenger,
     faViber,
 } from '@fortawesome/free-brands-svg-icons';
+import Map from './Map';
 
 import {
     LocationBox,
@@ -14,9 +15,8 @@ import {
     Social,
     SocialItem,
     SocialBox,
-    Map,
+    MapBox,
 } from './LocationStyled';
-
 
 const Location = () => (
     <LocationBox>
@@ -48,27 +48,34 @@ const Location = () => (
                 <p>Месенджери</p>
                 <SocialBox>
                     <SocialItem>
-                        <a href="#">
-                            <FontAwesomeIcon icon={faViber} />
+                        <a href="#" title="Viber">
+                            <FontAwesomeIcon icon={faViber}/>
                         </a>
                     </SocialItem>
-                    <SocialItem>
+                    {/* <SocialItem>
                         <a href="#">
                             <FontAwesomeIcon icon={faFacebookMessenger} />
                         </a>
-                    </SocialItem>
+                    </SocialItem> */}
                     <SocialItem>
-                        <a href="#">
-                            <FontAwesomeIcon icon={faFacebook} />
+                        <a href="https://api.whatsapp.com/send?phone=0(99)973-68-23" title="Whatsapp">
+                            <FontAwesomeIcon icon={faWhatsapp} />
                         </a>
                     </SocialItem>
                 </SocialBox>
             </Social>
         </LocationInfo>
 
-        <Map>
-            <div></div>
-        </Map>
+        <MapBox>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2652.32458799399!2d26.052873815839725!3d48.33506604536393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s8GW883P4%2B22!5e0!3m2!1suk!2sua!4v1617371869085!5m2!1suk!2sua"
+                // width="600"
+                // height="580"
+                // style={{ border: '0', width: '100%' }}
+                allowFullScreen=""
+                loading="lazy"
+            ></iframe>
+        </MapBox>
     </LocationBox>
 );
 

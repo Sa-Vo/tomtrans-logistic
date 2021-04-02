@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navigation from './Navigation';
-import {Wrapper} from '../../utils/VariablesStyled';
+import { Wrapper } from '../../utils/VariablesStyled';
 
 const Header = styled.header`
     position: absolute;

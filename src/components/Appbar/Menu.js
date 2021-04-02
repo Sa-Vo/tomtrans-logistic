@@ -43,7 +43,7 @@ const RightNav = ({ open }) => {
                             Головна
                         </NavLink>
                     </NavItem>
-                   
+
                     <NavItem>
                         <NavLink
                             to={routes.tirParking}
@@ -52,7 +52,7 @@ const RightNav = ({ open }) => {
                             Tir Parking
                         </NavLink>
                     </NavItem>
-                    
+
                     <NavItem>
                         <NavLink
                             to={routes.carService}
@@ -79,7 +79,7 @@ const RightNav = ({ open }) => {
                             Про нас
                         </NavLink>
                     </NavItem>
-                    
+
                     <NavItem>
                         <NavLink
                             to={routes.contacts}

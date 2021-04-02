@@ -70,7 +70,7 @@ export const ServiceItem = styled.li`
 export const ServiceTitle = styled.h3`
     transition: all 0.5s ease;
     position: absolute;
-    color: black;
+    color: white;
     top: 50%;
     transform: translate(0, -50%);
     font-size: 3rem;
@@ -81,9 +81,10 @@ export const ServiceTitle = styled.h3`
         font-size: 6rem;
     }
     @media ${palette.device.laptop} {
+        color: black;
         font-size: 3rem;
         left: 50%;
-        top: 80%;
+        top: 85%;
         transform: translate(-50%, 0);
     }
 `;

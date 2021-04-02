@@ -7,45 +7,26 @@ import {
     BoxDescrCar,
 } from './CarParkStyled';
 
-const CarPark = () => {
-    const infoCarPark = [
-        {
-            id: 0,
-            count: '50+',
-            infoTop: 'машин',
-            infoBottom: 'в автопарку',
-        },
+class CarPark extends React.Component {
+    render() {
+        const { carParkData } = this.props;
 
-        {
-            id: 1,
-            count: '21',
-            infoTop: 'тонн',
-            infoBottom: 'вантажність',
-        },
-
-        {
-            id: 2,
-            count: '86',
-            infoTop: 'm3',
-            infoBottom: 'об’єм причепа',
-        },
-    ];
-
-    return (
-        <BoxInfoCar>
-            {infoCarPark.map(info => (
-                <BoxInfoCarItem key={info.id}>
-                    <div>
-                        <Circle>{info.count}</Circle>
-                    </div>
-                    <BoxDescrCar>
-                        <p>{info.infoTop}</p>
-                        <span>{info.infoBottom}</span>
-                    </BoxDescrCar>
-                </BoxInfoCarItem>
-            ))}
-        </BoxInfoCar>
-    );
-};
+        return (
+            <BoxInfoCar>
+                {carParkData.map(info => (
+                    <BoxInfoCarItem key={info.id}>
+                        <div>
+                            <Circle>{info.count}</Circle>
+                        </div>
+                        <BoxDescrCar>
+                            <p>{info.infoTop}</p>
+                            <span>{info.infoBottom}</span>
+                        </BoxDescrCar>
+                    </BoxInfoCarItem>
+                ))}
+            </BoxInfoCar>
+        );
+    }
+}
 
 export default CarPark;

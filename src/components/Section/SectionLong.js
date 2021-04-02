@@ -4,15 +4,20 @@ import * as palette from '../../utils/VariablesStyled';
 
 const SectionBox = styled.section`
     padding-top: 4rem;
-    /* width: 100%; */
-    margin-top: 6rem;
+
     background-color: white;
     box-shadow: ${palette.shadow};
+    margin: 0 2rem 4rem 2rem;
+    border-radius: 3rem;
 
-    &:nth-child(3) {
-        margin: 0 2rem;
-        border-radius: 3rem;
+    @media ${palette.device.laptop} {
+        margin: 0 0 6rem 0;
+        border-radius: 0;
     }
+
+    /* &:nth-child(3) {
+        
+    } */
 
     h2 {
         font-size: ${palette.H_2};

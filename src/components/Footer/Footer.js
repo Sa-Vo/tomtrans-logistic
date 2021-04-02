@@ -1,15 +1,14 @@
 import React from 'react';
 
+import Section from '../Section/Section';
 const Footer = () => (
-  <footer>
-    <h1>Footer</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius
-      dignissimos explicabo laudantium provident veniam alias soluta
-      voluptatibus voluptatem corrupti? Nihil beatae quis reiciendis itaque iure
-      hic, enim quod et.
-    </p>
-  </footer>
+    <footer style={{ background: '#414141' }}>
+        <Section>
+            <p style={{ padding: '5px 0', color: 'white' }}>
+                © 2021 Tomtrans Logistic
+            </p>
+        </Section>
+    </footer>
 );
 
 export default Footer;

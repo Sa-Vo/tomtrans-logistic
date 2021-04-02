@@ -10,6 +10,7 @@ import SliderPartners from './components/SliderPartners';
 import Location from './components/Location/Location';
 
 import serviceData from './components/Service/ServiceData';
+import carParkData from './Data/CarParkData';
 
 const Home = () => (
     <>
@@ -18,21 +19,24 @@ const Home = () => (
         </HomeSlide>
         <Section>
             <h2>Наш автопарк</h2>
-            <CarPark />
+            <CarPark carParkData={carParkData} />
             <Slider />
         </Section>
         <SectionLong>
             <h2>Послуги</h2>
             <Service serviceData={serviceData} />
         </SectionLong>
+        <Section>
+            <CarPark carParkData={carParkData} />
+        </Section>
         <SectionLong>
             <h2>Наші партнери</h2>
             <SliderPartners />
         </SectionLong>
-        {/* <Section>
+        <Section>
             <h2>Де нас знайти</h2>
             <Location />
-        </Section> */}
+        </Section>
     </>
 );
 

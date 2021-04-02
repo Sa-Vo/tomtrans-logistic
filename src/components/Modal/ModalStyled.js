@@ -12,7 +12,7 @@ export const ModalBox = styled.div`
 `;
 
 export const ButtonModal = styled.button`
-    /* position: absolute; */
+    position: relative;
     width: 120px;
     height: 62px;
     font-size: 15px;

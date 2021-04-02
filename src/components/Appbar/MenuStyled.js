@@ -8,6 +8,7 @@ export const NavMenu = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
+
     /* flex-flow: row nowrap; */
 
     @media (max-width: 768px) {
