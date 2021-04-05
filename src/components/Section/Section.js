@@ -24,7 +24,3 @@ export const Section = styled.section`
         }
     }
 `;
-
-// const Section = ({ children }) => <SectionBox>{children}</SectionBox>;
-
-// export default Section;

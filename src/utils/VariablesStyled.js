@@ -13,7 +13,6 @@ export const Wrapper = props => `
 
 export const Button = () => `
     border-radius: 9px;
-    width: 20rem;
     height: 6rem;
     font-size: 2rem;
     font-weight: 700;

@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 const Box = styled.article`
     position: absolute;
-    top: 30%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     padding: 0 2rem;
     ${Wrapper}
 
@@ -15,8 +18,13 @@ const Box = styled.article`
     }
 
     p {
+        margin-bottom: 1rem;
         color: white;
         background-color: rgba(78, 76, 76, 0.5);
+
+        &:last-child {
+            margin: 0;
+        }
     }
 `;
 

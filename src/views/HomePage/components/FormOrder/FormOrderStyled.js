@@ -38,43 +38,25 @@ export const HeaderText = styled.div`
 `;
 
 export const Form = styled.form`
-    /* top: 25%;
-    left: 59%;
-    position: absolute; */
-    padding: 45px 71px 45px;
+    padding: 4.5rem 2rem 4.5rem;
     background: ${palette.white};
     border-radius: 20px;
     z-index: 3;
     box-shadow: ${palette.shadow};
-    /* top: 18%;
-    left: 9%;
-    padding: 30px;
-    position: absolute;
-    background: ${palette.white};
-    border-radius: 20px;
-    z-index: 2;
-    box-shadow: ${palette.shadow};
 
     @media ${palette.device.mobileL} {
-        left: 14%;
-    }
-
-    @media ${palette.device.mobileL} {
-        left: 14.5%;
+        padding: 4.5rem 4rem 4.5rem;
     }
 
     @media ${palette.device.tablet} {
-        left: 50%;
-    } */
+        padding: 4.5rem 6rem 4.5rem;
+    }
 
-    /* h3 {
-        position: relative;
-        z-index: 5;
-        margin: 0 0 20px;
+    h3 {
+        font-size: 2.5rem;
         text-align: center;
-        color: ${palette.black};
-        font-size: 20px;
-    } */
+        margin-bottom: 3rem;
+    }
 `;
 
 export const InputBox = styled.div`
@@ -86,7 +68,7 @@ export const InputBox = styled.div`
         display: block;
         width: 100%;
         line-height: 25px;
-        font-size: 25px;
+        font-size: 2rem;
         font-weight: 300;
         background: none;
         border-width: 0;
@@ -122,7 +104,7 @@ export const InputBox = styled.div`
 `;
 
 export const ButtonForm = styled.button`
-    width: 120px;
+    width: 100%;
     height: 62px;
     font-size: 15px;
     background-color: ${palette.white};
