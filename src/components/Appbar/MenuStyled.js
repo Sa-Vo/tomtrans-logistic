@@ -8,6 +8,7 @@ export const NavMenu = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
+    
 
     /* flex-flow: row nowrap; */
 
@@ -23,6 +24,7 @@ export const NavMenu = styled.div`
         width: 100%;
         padding-top: 3.5rem;
         transition: transform 0.3s ease-in-out;
+        z-index: 2;
     }
 `;
 

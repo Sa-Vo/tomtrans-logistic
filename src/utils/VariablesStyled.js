@@ -13,11 +13,16 @@ export const Wrapper = props => `
 
 export const Button = () => `
     border-radius: 9px;
-    color: ${black};
-    border: solid 2px ${green};
+    width: 20rem;
+    height: 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: ${white};
+    border: solid 4px ${green};
     cursor: pointer;
     outline: none;
     transition: all 0.7s;
+    background-color: ${green};
 
     &:hover {
         transition: all 0.3s;
@@ -39,6 +44,7 @@ export const H_5 = '20px';
 export const black = '#1a1a1a';
 export const green = '#277a35';
 export const white = '#ffffff';
+export const darkThemeBg = '#2d2d2d';
 
 export const shadow = '9.057px 7.873px 30.4px 1.6px rgba(0, 0, 0, 0.24)';
 

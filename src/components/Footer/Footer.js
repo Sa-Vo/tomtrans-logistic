@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Section from '../Section/Section';
+import Wrapper from '../Section/Wrapper';
 const Footer = () => (
     <footer style={{ background: '#414141' }}>
-        <Section>
+        <Wrapper>
             <p style={{ padding: '5px 0', color: 'white' }}>
                 © 2021 Tomtrans Logistic
             </p>
-        </Section>
+        </Wrapper>
     </footer>
 );
 

@@ -1,6 +1,21 @@
 import styled from 'styled-components';
 import * as palette from '../../../../utils/VariablesStyled';
 
+export const LocationWrapp = styled.div`
+    
+    height: 58rem;
+    @media ${palette.device.tablet} {
+        padding-top: 4rem;
+        height: 54rem;
+    }
+    @media ${palette.device.laptop} {
+        height: auto;
+    }
+    @media ${palette.device.laptopL} {
+        height: 75rem;
+    }
+`;
+
 export const LocationBox = styled.div`
     display: block;
     padding-top: 2rem;

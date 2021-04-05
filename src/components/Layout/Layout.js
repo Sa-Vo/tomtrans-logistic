@@ -12,7 +12,7 @@ import Footer from '../Footer/Footer';
 const Layout = ({ children }) => (
     <div>
         <Appbar />
-        <main>{children}</main>
+        {children}
         <Footer />
     </div>
 );

@@ -1,7 +1,9 @@
 import React from 'react';
-import { HomeSlide } from './HomeStyled';
+import { HomePage, HomeSlide } from './HomeStyled';
+import TitleTextBox from './components/TitleTextBox';
 import Modal from '../../components/Modal/Modal';
-import Section from '../../components/Section/Section';
+import WrapperBox from '../../components/Section/Wrapper';
+import { Section } from '../../components/Section/Section';
 import SectionLong from '../../components/Section/SectionLong';
 import CarPark from './components/CarPark/CarPark';
 import Slider from './components/Slider/Slider';
@@ -13,22 +15,23 @@ import serviceData from './components/Service/ServiceData';
 import carParkData from './Data/CarParkData';
 
 const Home = () => (
-    <>
+    <HomePage>
         <HomeSlide>
+            <TitleTextBox />
             <Modal />
         </HomeSlide>
-        <Section>
+        <WrapperBox>
             <h2>Наш автопарк</h2>
             <CarPark carParkData={carParkData} />
             <Slider />
-        </Section>
+        </WrapperBox>
         <SectionLong>
             <h2>Послуги</h2>
             <Service serviceData={serviceData} />
         </SectionLong>
-        <Section>
+        <WrapperBox>
             <CarPark carParkData={carParkData} />
-        </Section>
+        </WrapperBox>
         <SectionLong>
             <h2>Наші партнери</h2>
             <SliderPartners />
@@ -37,7 +40,7 @@ const Home = () => (
             <h2>Де нас знайти</h2>
             <Location />
         </Section>
-    </>
+    </HomePage>
 );
 
 export default Home;

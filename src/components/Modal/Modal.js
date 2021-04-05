@@ -12,15 +12,13 @@ const Modal = () => {
 
     return (
         <>
-            <div>
-                <ModalBox>
-                    <ButtonModal onClick={openModal}>MODAL</ButtonModal>
-                    <ModalContent
-                        showModal={showModal}
-                        setShowModal={setShowModal}
-                    ></ModalContent>
-                </ModalBox>
-            </div>
+            <ModalBox>
+                <ButtonModal onClick={openModal}>Подати заявку</ButtonModal>
+                <ModalContent
+                    showModal={showModal}
+                    setShowModal={setShowModal}
+                ></ModalContent>
+            </ModalBox>
         </>
     );
 };

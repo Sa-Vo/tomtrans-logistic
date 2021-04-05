@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    height: 20vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 10vh;
+    }
+}
+/* @media (min-width: 769px) {
+    position: absolute;
+} */
+
+.header.shadow {
+    transition: transform 0.5s ease;
+    background-color: rgba(43, 43, 43, 0.3);
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.header.hidden {
+    transform: translateY(-110%);
+}

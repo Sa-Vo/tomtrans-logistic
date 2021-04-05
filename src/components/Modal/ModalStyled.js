@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
-import * as palette from '../../utils/VariablesStyled';
+import { Button } from '../../utils/VariablesStyled';
 
 export const ModalBox = styled.div`
     display: flex;
@@ -8,17 +8,15 @@ export const ModalBox = styled.div`
     align-items: center;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
 `;
 
 export const ButtonModal = styled.button`
-    position: relative;
-    width: 120px;
-    height: 62px;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    ${palette.Button}
-    z-index: 1;
+    font-size: 2rem;
+    ${Button}
+    position: absolute;
+    top: 60%;
+    background-color: rgba(255, 255, 255, 0);
 `;
 
 export const Background = styled.div`
@@ -29,7 +27,7 @@ export const Background = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 10;
 `;
 
 export const ModalWrapper = styled.div`
@@ -38,7 +36,6 @@ export const ModalWrapper = styled.div`
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     background: #fff;
     color: #000;
-
     position: relative;
     z-index: 10;
     border-radius: 10px;
