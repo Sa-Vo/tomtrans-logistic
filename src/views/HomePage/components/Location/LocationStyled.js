@@ -3,10 +3,10 @@ import * as palette from '../../../../utils/VariablesStyled';
 
 export const LocationWrapp = styled.div`
     
-    height: 58rem;
+    height: 54.5rem;
     @media ${palette.device.tablet} {
         padding-top: 4rem;
-        height: 54rem;
+        height: 48rem;
     }
     @media ${palette.device.laptop} {
         height: auto;

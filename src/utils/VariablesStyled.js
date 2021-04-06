@@ -44,6 +44,7 @@ export const black = '#1a1a1a';
 export const green = '#277a35';
 export const white = '#ffffff';
 export const darkThemeBg = '#2d2d2d';
+export const darkThemeBgL = '#363636';
 
 export const shadow = '9.057px 7.873px 30.4px 1.6px rgba(0, 0, 0, 0.24)';
 

@@ -5,6 +5,8 @@ import bgImg from '../../assets/bg-D.png';
 
 export const CarServPage = styled.main`
     background-image: url(${bgImg});
+    padding-bottom: 4rem;
+    
 `;
 
 export const CarServSlide = styled.section`

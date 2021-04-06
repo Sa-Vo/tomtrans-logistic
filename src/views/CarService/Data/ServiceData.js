@@ -1,9 +1,9 @@
-import document from '../../../../assets/ServiceIco/document.png';
-import engine from '../../../../assets/ServiceIco/engine.png';
-import suspension from '../../../../assets/ServiceIco/suspension.png';
-import comDiagnostics from '../../../../assets/ServiceIco/com-diagnostics.png';
-import gasoline from '../../../../assets/ServiceIco/gasoline.png';
-import brakeDisc from '../../../../assets/ServiceIco/brake-disc.png';
+import document from '../../../assets/ServiceIco/document.png';
+import engine from '../../../assets/ServiceIco/engine.png';
+import suspension from '../../../assets/ServiceIco/suspension.png';
+import comDiagnostics from '../../../assets/ServiceIco/com-diagnostics.png';
+import gasoline from '../../../assets/ServiceIco/gasoline.png';
+import brakeDisc from '../../../assets/ServiceIco/brake-disc.png';
 
 const ServiceData = [
     {

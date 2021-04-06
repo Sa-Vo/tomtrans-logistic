@@ -29,7 +29,7 @@ const RightNav = ({ open }) => {
                         </NavContactBoxItem>
                         <NavContactBoxItem>
                             <p>Телефон</p>
-                            <p>+380(99)973-68-23</p>
+                            <p>+380(99)9736823</p>
                         </NavContactBoxItem>
                     </NavContactBox>
                 </NavTop>

@@ -14,7 +14,6 @@ class ServiceServices extends React.Component {
                             <div>
                                 <img src={info.ico} alt="" />
                             </div>
-
                             <h3>{info.title}</h3>
                         </ServicesItem>
                     ))}

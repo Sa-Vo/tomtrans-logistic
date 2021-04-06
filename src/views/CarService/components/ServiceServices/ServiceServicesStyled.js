@@ -14,6 +14,7 @@ export const Services = styled.ul`
     margin: 0;
     list-style: none;
     max-width: 130rem;
+    padding-bottom: 4rem;
 `;
 export const ServicesItem = styled.li`
     width: 32rem;
@@ -25,9 +26,10 @@ export const ServicesItem = styled.li`
     color: white;
     background-color: #373737;
     border-radius: 2rem;
+    box-shadow: ${palette.shadow};
 
     @media (min-width: 320px) and (max-width: 799px) {
-        /* margin: 0 auto; */
+        margin: 0 4rem 4rem 4rem;
     }
 
     @media (min-width: 800px) and (max-width: 1199px) {
@@ -42,7 +44,7 @@ export const ServicesItem = styled.li`
         }
     }
 
-    @media (min-width: 2000px) {
+    @media (min-width: 1200px) {
         &:nth-child(3n + 0) {
             margin-right: 0;
         }
@@ -55,7 +57,7 @@ export const ServicesItem = styled.li`
     div {
         width: 15rem;
         height: 15rem;
-        background-color: green;
+        background-color: ${palette.green};
         border-radius: 50%;
         margin: 0 auto;
 

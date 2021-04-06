@@ -5,6 +5,7 @@ import bgImg from '../../assets/bg-L.webp';
 
 export const HomePage = styled.main`
     background-image: url(${bgImg});
+    padding-bottom: 4rem;
 `;
 
 export const HomeSlide = styled.section`

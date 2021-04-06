@@ -1,12 +1,13 @@
 import React from 'react';
-import { Section } from '../../components/Section/Section';
-import SectionLong from '../../components/Section/SectionLong';
+import { Section, SectionLong } from '../../components/Section/Section';
 import Wrapper from '../../components/Section/Wrapper';
 import { CarServPage, CarServSlide } from './CarServiceStyled';
-import Location from '../HomePage/components/Location/Location';
+import Work from './components/Work/Work';
 import ServiceServices from './components/ServiceServices/ServiceServices';
+import Location from '../HomePage/components/Location/Location';
 
-import serviceData from './components/ServiceServices/ServiceData';
+import serviceData from './Data/ServiceData';
+import workData from './Data/WorkData';
 
 const CarService = () => (
     <CarServPage>
@@ -14,14 +15,16 @@ const CarService = () => (
             <h2>HELOOOO</h2>
         </CarServSlide>
 
+        <SectionLong darkTheme>
+            <Work title={'Як ми працюєм'} workData={workData} />
+        </SectionLong>
+
         <Wrapper>
             <ServiceServices
                 title={'Послуги сервісу'}
                 serviceData={serviceData}
             />
         </Wrapper>
-
-        <hr/>
 
         <Section darkTheme>
             <Location title={'Де нас знайти'} />
