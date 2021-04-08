@@ -6,6 +6,8 @@ import {
     ButtonFormDefault,
     green,
     black,
+    darkThemeBg,
+    white,
 } from '../../../../utils/VariablesStyled';
 
 // style main slide
@@ -47,13 +49,19 @@ import {
 
 export const Form = styled.form`
     ${FornDefault};
-    background-color: white;
+    background-color: ${darkThemeBg};
+    color: ${white};
+`;
+
+export const Box = styled.div`
+    display: flex;
+    justify-content: space-between;
 `;
 
 export const InputBox = styled.div`
     ${InputBoxDefault}
     margin-bottom: 4.4rem;
-    width: 25rem;
+    width: 50rem;
 
     input {
         font-size: 2rem;
@@ -76,9 +84,24 @@ export const InputBox = styled.div`
     }
 `;
 
+export const MoreInfo = styled.textarea`
+    width: 50%;
+    height: 30rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    border: 3px solid gray;
+    background-color: rgba(255, 255, 255, 0.712);
+    transition: 0.5s all;
+
+    &:focus {
+        outline: none;
+        border: 3px solid ${green};
+    }
+`;
+
 export const ButtonForm = styled.button`
     ${ButtonFormDefault}
     ${Button}
-    width: 100%;
+    width: 26rem;
     height: 62px;
 `;

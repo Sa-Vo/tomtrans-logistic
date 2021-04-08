@@ -1,10 +1,17 @@
 import React from 'react';
-import { Section, SectionLong } from '../../components/Section/Section';
+import { Element } from 'react-scroll';
+
+import {
+    Section,
+    SectionLong,
+    FormBox,
+} from '../../components/Section/Section';
 import Wrapper from '../../components/Section/Wrapper';
 import { CarServPage, CarServSlide } from './CarServiceStyled';
 import Work from './components/Work/Work';
 import ServiceServices from './components/ServiceServices/ServiceServices';
 import Location from '../HomePage/components/Location/Location';
+import FormService from './components/FormService/FormService';
 
 import serviceData from './Data/ServiceData';
 import workData from './Data/WorkData';
@@ -25,6 +32,12 @@ const CarService = () => (
                 serviceData={serviceData}
             />
         </Wrapper>
+
+        <FormBox darkTheme>
+            <Element name="test2" className="element">
+                <FormService />
+            </Element>
+        </FormBox>
 
         <Section darkTheme>
             <Location title={'Де нас знайти'} />

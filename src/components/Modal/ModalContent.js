@@ -41,6 +41,7 @@ export const ModalContent = ({ showModal, setShowModal }) => {
                     <animated.div style={animation}>
                         <>
                             <FormOrder showModal={showModal} />
+
                             <CloseModalButton
                                 aria-label="Close modal"
                                 onClick={() => setShowModal(prev => !prev)}

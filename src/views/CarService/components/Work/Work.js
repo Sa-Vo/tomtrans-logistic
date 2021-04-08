@@ -1,13 +1,24 @@
 import React from 'react';
-import Modal from '../../../../components/Modal/Modal';
+import {
+    Link,
+    DirectLink,
+    Element,
+    Events,
+    animateScroll as scroll,
+    scrollSpy,
+    scroller,
+} from 'react-scroll';
 import {
     WorkBox,
     WorkInfo,
+    SubText,
     StepsBox,
     StepItem,
     StepCount,
     StepTitle,
     StepInfo,
+    Box,
+    Line,
 } from './WorkStyled';
 
 class Work extends React.Component {
@@ -18,24 +29,39 @@ class Work extends React.Component {
                 <WorkInfo>
                     <h2>{title}</h2>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vero, ipsa?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repudiandae deleniti exercitationem ipsam repellat
-                        animi! Eius ducimus nam commodi odio possimus!
-                    </p>
-
-                    <button>Записатись</button>
+                    <SubText>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vero, ipsa?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Repudiandae deleniti exercitationem ipsam
+                            repellat animi! Eius ducimus nam commodi odio
+                            possimus!
+                        </p>
+                    </SubText>
+                    <Link
+                        activeClass="active"
+                        className="test2"
+                        to="test2"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        <button>Записатись</button>
+                    </Link>
                 </WorkInfo>
                 <StepsBox>
                     {workData.map(info => (
                         <StepItem key={info.id}>
-                            <StepCount>{info.number}</StepCount>
-                            <StepTitle>{info.title}</StepTitle>
-                            <StepInfo>{info.text}</StepInfo>
+                            <Box>
+                                <StepCount>{info.number}</StepCount>
+                                <StepTitle>{info.title}</StepTitle>
+                            </Box>
+                            <Line>
+                                <StepInfo>{info.text}</StepInfo>
+                            </Line>
                         </StepItem>
                     ))}
                 </StepsBox>

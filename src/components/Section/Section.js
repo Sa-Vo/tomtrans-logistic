@@ -47,3 +47,8 @@ export const SectionLong = styled.section`
         text-align: center;
     }
 `;
+
+export const FormBox = styled.section`
+    max-width: 130rem;
+    margin: 0 auto;
+`;

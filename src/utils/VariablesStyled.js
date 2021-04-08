@@ -34,6 +34,68 @@ export const Button = () => `
     }
 `;
 
+export const FornDefault = () => `
+    box-shadow: ${shadow};
+    border-radius: 20px;
+    padding: 4.5rem 2rem 4.5rem;
+    z-index: 3;
+
+@media ${device.mobileL} {
+    padding: 4.5rem 4rem 4.5rem;
+}
+
+@media ${device.tablet} {
+    padding: 4.5rem 6rem 4.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+`;
+
+export const InputBoxDefault = () => `
+position: relative;
+
+input {
+    display: block;
+    width: 100%;
+    line-height: 25px;
+    font-weight: 300;
+    background: none;
+    border-width: 0;
+    transition: all 0.2s ease;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+label {
+    position: absolute;
+    font-weight: 300;
+    transform: translateY(-35px);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    color: #a1a5a9;
+}
+
+input:focus + label,
+input:valid + label {
+    transform: translateY(-60px);
+    margin-left: -14px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: 0;
+}
+`;
+
+export const ButtonFormDefault = () => `
+    font-size: 15px;
+    background-color: ${white};
+`;
+
 export const H_1 = '80px';
 export const H_2 = '45px';
 export const H_3 = '30px';
