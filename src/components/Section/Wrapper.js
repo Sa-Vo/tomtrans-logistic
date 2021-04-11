@@ -4,7 +4,6 @@ import * as palette from '../../utils/VariablesStyled';
 
 const SectionBox = styled.section`
     ${Wrapper}
-    /* height: 100vh; */
 
     h2 {
         font-size: 3rem;

@@ -38,10 +38,6 @@ export const SectionLong = styled.section`
         border-radius: 0;
     }
 
-    /* &:nth-child(3) {
-        
-    } */
-
     h2 {
         font-size: ${palette.H_2};
         text-align: center;
@@ -50,5 +46,10 @@ export const SectionLong = styled.section`
 
 export const FormBox = styled.section`
     max-width: 130rem;
-    margin: 0 auto;
+    margin: 0 2rem 4rem 2rem;
+
+
+    @media ${palette.device.laptopL} {
+        margin: 0 auto;
+    }
 `;

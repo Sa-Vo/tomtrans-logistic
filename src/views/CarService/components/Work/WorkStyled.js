@@ -2,12 +2,17 @@ import styled from 'styled-components';
 import * as palette from '../../../../utils/VariablesStyled';
 
 export const WorkBox = styled.div`
-    display: flex;
-    justify-content: space-between;
-    padding: 7rem 0 7rem 30rem;
+    display: block;
+    padding: 0 2rem 4rem 2rem;
+
+    @media ${palette.device.laptopL} {
+        display: flex;
+        justify-content: space-between;
+        padding: 7rem 0 7rem 30rem;
+    }
 `;
 export const WorkInfo = styled.article`
-    max-width: 45rem;
+    /* max-width: 45rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,30 +33,55 @@ export const SubText = styled.div`
     }
 `;
 
+export const ButtonForm = styled.button`
+    ${palette.ButtonFormDefault}
+    ${palette.Button}
+    margin-top: 4rem;
+    width: 26rem;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0);
+    @media ${palette.device.laptopL} {
+        margin: 0;
+    }
+`;
+
 export const StepsBox = styled.ul`
     padding: 0;
     list-style: none;
-    width: 65%;
+    width: 100%;
+    @media ${palette.device.laptopL} {
+        width: 65%;
+    }
 `;
 
 export const StepItem = styled.li`
     font-weight: 500;
-    display: flex;
-    align-items: center;
+    display: block;
     /* width: 70rem; */
-    padding-left: 2rem;
+
     background-color: #202020;
     margin-bottom: 2rem;
     border: 1px solid white;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+    @media ${palette.device.tablet} {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+    }
 `;
 
 export const Box = styled.div`
     display: flex;
     align-items: center;
-    width: 22rem;
-    padding-right: 5rem;
+    justify-content: center;
+    padding: 0;
+
+    @media ${palette.device.tablet} {
+        justify-content: start;
+        width: 22rem;
+        padding-right: 5rem;
+    }
 `;
 
 export const StepCount = styled.p`
@@ -71,16 +101,20 @@ export const Line = styled.div`
 `;
 
 export const StepInfo = styled.p`
-    width: 40rem;
     font-size: 2rem;
+    padding: 0 2rem;
 
-    &::before {
-        content: '';
-        width: 2px;
-        height: 8rem;
-        background: gray;
-        position: absolute;
-        margin-left: -3rem;
-        bottom: -33%;
+    @media ${palette.device.tablet} {
+        width: 40rem;
+        font-size: 2rem;
+        &::before {
+            content: '';
+            width: 2px;
+            height: 8rem;
+            background: gray;
+            position: absolute;
+            margin-left: -3rem;
+            bottom: -33%;
+        }
     }
 `;

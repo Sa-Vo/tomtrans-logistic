@@ -6,7 +6,7 @@ const FormService = () => (
             <h3>Швидка заявка</h3>
             <Box>
                 <div>
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="formService" />
                     <InputBox>
                         <input
                             type="text"

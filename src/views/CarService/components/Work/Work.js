@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-    Link,
-    DirectLink,
-    Element,
-    Events,
-    animateScroll as scroll,
-    scrollSpy,
-    scroller,
-} from 'react-scroll';
+import { Link } from 'react-scroll';
 import {
     WorkBox,
     WorkInfo,
@@ -19,6 +11,7 @@ import {
     StepInfo,
     Box,
     Line,
+    ButtonForm,
 } from './WorkStyled';
 
 class Work extends React.Component {
@@ -49,7 +42,7 @@ class Work extends React.Component {
                         smooth={true}
                         duration={500}
                     >
-                        <button>Записатись</button>
+                        <ButtonForm>Записатись</ButtonForm>
                     </Link>
                 </WorkInfo>
                 <StepsBox>
