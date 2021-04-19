@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from '../views/HomePage/Home';
 import AboutUs from '../views/AboutUs/AboutUs';
 import CarService from '../views/CarService/CarService';
+import Contact from '../views/Contact/Contact';
 import NotFound from '../views/PageError/PageError';
 import routes from '../routes';
 
@@ -17,6 +17,7 @@ const App = () => (
             {/* <Route path={routes.vacancies} component={AboutUs} />
             <Route path={routes.hostel} component={AboutUs} />
             <Route path={routes.contacts} component={AboutUs} /> */}
+            <Route path={routes.contacts} component={Contact} />
             <Route component={NotFound} />
         </Switch>
     </Layout>

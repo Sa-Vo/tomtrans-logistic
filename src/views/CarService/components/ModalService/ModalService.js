@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { ModalContent } from './ModalContent';
-import FormOrder from '../../views/HomePage/components/FormOrder/FormOrder';
-import { ModalBox, ButtonModal } from './ModalStyled';
+import { ModalContent } from './ModalServiceContent';
+import {
+    ModalBox,
+    ButtonModal,
+} from '../../../../components/Modal/ModalStyled';
 
 const Modal = () => {
     const [showModal, setShowModal] = useState(false);
@@ -18,7 +20,6 @@ const Modal = () => {
                 <ModalContent
                     showModal={showModal}
                     setShowModal={setShowModal}
-                    formC={FormOrder}
                 ></ModalContent>
             </ModalBox>
         </>

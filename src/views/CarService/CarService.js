@@ -10,7 +10,9 @@ import Wrapper from '../../components/Section/Wrapper';
 import { CarServPage, CarServSlide } from './CarServiceStyled';
 import Work from './components/Work/Work';
 import ServiceServices from './components/ServiceServices/ServiceServices';
-import Location from '../HomePage/components/Location/Location';
+import { TitleWrapp, Title, SubTitle } from './components/CarServiceTitle/CarServiceTitle';
+import Modal from './components/ModalService/ModalService';
+import Location from './components/Location/Location';
 import FormService from './components/FormService/FormService';
 
 import serviceData from './Data/ServiceData';
@@ -19,7 +21,12 @@ import workData from './Data/WorkData';
 const CarService = () => (
     <CarServPage>
         <CarServSlide>
-            <h2>HELOOOO</h2>
+            <TitleWrapp>
+                <Title />
+                <SubTitle />
+            </TitleWrapp>
+
+            <Modal />
         </CarServSlide>
 
         <SectionLong darkTheme>
@@ -34,7 +41,7 @@ const CarService = () => (
         </Wrapper>
 
         <FormBox darkTheme>
-            <Element name="test2" className="element">
+            <Element name="formProblem">
                 <FormService />
             </Element>
         </FormBox>

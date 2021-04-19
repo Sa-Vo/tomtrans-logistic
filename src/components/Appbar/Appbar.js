@@ -5,12 +5,16 @@ import { Wrapper } from '../../utils/VariablesStyled';
 
 const Header = styled.header`
     position: fixed;
-    height: 20vh;
+    height: 10vh;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 2;
+
+    @media (max-width: 768px) {
+        background-color: white;
+    }
 
     @media (min-width: 769px) {
         position: absolute;

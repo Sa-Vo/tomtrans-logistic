@@ -35,9 +35,7 @@ class Work extends React.Component {
                         </p>
                     </SubText>
                     <Link
-                        activeClass="active"
-                        className="test2"
-                        to="test2"
+                        to="formProblem"
                         spy={true}
                         smooth={true}
                         duration={500}

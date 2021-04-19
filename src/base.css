@@ -10,6 +10,22 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-size: 1.6rem;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #212121;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+
+    background-color: #277a35;
 }
 
 img {
@@ -30,4 +46,22 @@ h6 {
 
 p {
     margin: 0;
+}
+/* .navbar {
+    background-color: #060b26;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+} */
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+@media (max-width: 425px) {
+    .slick-slide {
+        margin-right: 2rem;
+        height: 100px;
+    }
 }

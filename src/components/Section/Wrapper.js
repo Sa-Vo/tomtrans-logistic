@@ -7,6 +7,7 @@ const SectionBox = styled.section`
 
     h2 {
         font-size: 3rem;
+        padding-top: 4rem;
         text-align: center;
         @media ${palette.device.tablet} {
             font-size: ${palette.H_2};

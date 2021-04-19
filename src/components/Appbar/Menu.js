@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
 import {
+    Burger,
+    BurgerClose,
     NavMenu,
     NavTop,
     NavItem,
@@ -13,10 +17,22 @@ import {
 } from './MenuStyled';
 import imgLogoPath from '../../assets/Logo.png';
 
-const RightNav = ({ open }) => {
+// const removC = () => ()
+
+const RightNav = () => {
+    const [sidebar, setSidebar] = useState(false);
+    const showSidebar = () => setSidebar(!sidebar);
+
     return (
         <>
-            <NavMenu open={open}>
+            <Burger onClick={showSidebar}>
+                <FaIcons.FaBars />
+            </Burger>
+
+            <NavMenu className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+                <BurgerClose onClick={showSidebar}>
+                    <AiIcons.AiOutlineClose />
+                </BurgerClose>
                 <NavTop>
                     <LogoBox>
                         <img src={imgLogoPath} alt="logo" />
@@ -33,7 +49,7 @@ const RightNav = ({ open }) => {
                         </NavContactBoxItem>
                     </NavContactBox>
                 </NavTop>
-                <NavItemBox>
+                <NavItemBox onClick={showSidebar}>
                     <NavItem>
                         <NavLink
                             to={routes.home}

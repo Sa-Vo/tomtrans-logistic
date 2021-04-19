@@ -6,6 +6,7 @@ import {
     ButtonFormDefault,
     green,
     black,
+    white,
 } from '../../../../utils/VariablesStyled';
 
 // style main slide
@@ -47,7 +48,11 @@ import {
 
 export const Form = styled.form`
     ${FornDefault};
-    background-color: white;
+    background: ${props => (props.darkTheme ? '#212121' : `${white}`)};
+
+    h3 {
+        color: ${props => (props.darkTheme ? `${white}` : `${black}`)};
+    }
 `;
 
 export const InputBox = styled.div`
@@ -72,7 +77,7 @@ export const InputBox = styled.div`
 
     input:focus + label,
     input:valid + label {
-        color: ${black};
+        color: ${props => (props.darkTheme ? `${white}` : `${black}`)};
     }
 `;
 

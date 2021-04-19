@@ -3,23 +3,31 @@ import * as palette from '../../utils/VariablesStyled';
 
 export const activeStyle = '#277a35';
 
+export const Burger = styled.div`
+    ${palette.ButtonPosion}
+    position: fixed;
+`;
+
+export const BurgerClose = styled.div`
+    position: absolute;
+    ${palette.ButtonPosion}
+    color: white;
+    right: 25px;
+    font-size: 3rem;
+`;
+
 export const NavMenu = styled.div`
     list-style: none;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
-    
-
-    /* flex-flow: row nowrap; */
 
     @media (max-width: 768px) {
         background-color: #0d2538;
         position: fixed;
-        transform: ${({ open }) =>
-            open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
-        margin: 0;
-        right: 0;
+        left: -100%;
+        transition: 850ms;
         height: 100vh;
         width: 100%;
         padding-top: 3.5rem;
@@ -48,6 +56,7 @@ export const NavContactBox = styled.ul`
 
 export const NavContactBoxItem = styled.li`
     margin-right: 4rem;
+
     p {
         color: white;
         &:nth-child(1) {
@@ -67,12 +76,18 @@ export const NavItemBox = styled.ul`
     justify-content: space-between;
 
     @media (max-width: 768px) {
+        padding: 3rem 1.5rem 0 1.5rem;
         flex-flow: column nowrap;
+        align-items: center;
     }
 `;
 
 export const NavItem = styled.li`
     transition: 0.5s;
+    @media (max-width: 768px) {
+        margin-bottom: 5rem;
+    }
+
     &:hover {
         transform: scale(1.1);
         transition: 0.3s;
@@ -83,9 +98,13 @@ export const NavItem = styled.li`
 
     a {
         color: ${palette.white};
-        font-size: 20px;
+        font-size: 2rem;
         text-transform: uppercase;
         text-decoration: none;
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
+
         &::after {
             display: block;
             content: '';

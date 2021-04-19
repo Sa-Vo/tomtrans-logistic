@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Burger from './Burger';
+import Menu from './Menu';
 import imgLogoPath from '../../assets/Logo.png';
 
 const Nav = styled.nav`
@@ -26,7 +26,7 @@ const Navigation = () => {
             <NavLogoBox>
                 <img src={imgLogoPath} alt="Logo" />
             </NavLogoBox>
-            <Burger />
+            <Menu />
         </Nav>
     );
 };

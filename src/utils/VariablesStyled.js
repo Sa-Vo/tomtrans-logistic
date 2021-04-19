@@ -34,6 +34,21 @@ export const Button = () => `
     }
 `;
 
+export const ButtonPosion = () => `
+    width: 2rem;
+    height: 2rem;
+    top: 3rem;
+    right: 2rem;
+    /* z-index: 20; */
+    display: none;
+
+@media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+`;
+
 export const FornDefault = () => `
     box-shadow: ${shadow};
     border-radius: 20px;

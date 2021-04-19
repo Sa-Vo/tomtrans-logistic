@@ -12,13 +12,22 @@ export const WorkBox = styled.div`
     }
 `;
 export const WorkInfo = styled.article`
-    /* max-width: 45rem; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media ${palette.device.laptopL} {
+        max-width: 45rem;
+        margin-right: 3rem;
+    }
+
     h2 {
         font-size: 4rem;
         text-align: left;
+    }
+
+    a {
+        width: 27rem;
     }
 `;
 
@@ -57,17 +66,20 @@ export const StepsBox = styled.ul`
 export const StepItem = styled.li`
     font-weight: 500;
     display: block;
-    /* width: 70rem; */
-
     background-color: #202020;
     margin-bottom: 2rem;
     border: 1px solid white;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
+
     @media ${palette.device.tablet} {
         display: flex;
         align-items: center;
         padding-left: 2rem;
+    }
+
+    @media ${palette.device.laptopL} {
+        border-right: none;
     }
 `;
 

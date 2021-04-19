@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import { Button } from '../../utils/VariablesStyled';
+import * as palette from '../../utils/VariablesStyled';
 
 export const ModalBox = styled.div`
     display: flex;
@@ -15,8 +16,15 @@ export const ButtonModal = styled.button`
     font-size: 2rem;
     ${Button}
     position: absolute;
-    top: 60%;
+    top: 70%;
     background-color: rgba(255, 255, 255, 0);
+
+    @media ${palette.device.tablet} {
+        left: 11%;
+    }
+    @media ${palette.device.laptopL} {
+        left: 15%;
+    }
 `;
 
 export const Background = styled.div`

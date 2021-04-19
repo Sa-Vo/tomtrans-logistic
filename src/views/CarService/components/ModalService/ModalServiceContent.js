@@ -1,9 +1,12 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
-import FormOrder from '../../views/HomePage/components/FormOrder/FormOrder';
-import { Background, CloseModalButton } from './ModalStyled';
+import FormService from '../ModalService/Form';
+import {
+    Background,
+    CloseModalButton,
+} from '../../../../components/Modal/ModalStyled';
 
-export const ModalContent = ({ showModal, setShowModal, formC }) => {
+export const ModalContent = ({ showModal, setShowModal }) => {
     const modalRef = useRef();
 
     const animation = useSpring({
@@ -40,7 +43,7 @@ export const ModalContent = ({ showModal, setShowModal, formC }) => {
                 <Background onClick={closeModal} ref={modalRef}>
                     <animated.div style={animation}>
                         <>
-                            <FormOrder showModal={showModal} />
+                            <FormService showModal={showModal} />
                             <CloseModalButton
                                 aria-label="Close modal"
                                 onClick={() => setShowModal(prev => !prev)}

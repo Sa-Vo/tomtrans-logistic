@@ -5,9 +5,9 @@ import bgImg from '../../assets/bg-D.png';
 
 export const CarServPage = styled.main`
     background-image: url(${bgImg});
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 4rem;
 `;
 

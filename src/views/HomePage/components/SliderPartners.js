@@ -11,6 +11,10 @@ const SliderBox = styled.div`
     padding: 4rem 0;
 `;
 
+const SliderItem = styled.div`
+    /* padding-right: 2rem; */
+`;
+
 export default function SliderPartners() {
     const settings = {
         arrows: false,
@@ -40,7 +44,7 @@ export default function SliderPartners() {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 },
             },
@@ -50,21 +54,21 @@ export default function SliderPartners() {
     return (
         <SliderBox>
             <Slider {...settings}>
-                <div>
+                <SliderItem>
                     <img src={LogoAuchan} alt="" />
-                </div>
-                <div>
+                </SliderItem>
+                <SliderItem>
                     <img src={LogoEpic} alt="" />
-                </div>
-                <div>
+                </SliderItem>
+                <SliderItem>
                     <img src={LogoFozzy} alt="" />
-                </div>
-                <div>
+                </SliderItem>
+                <SliderItem>
                     <img src={LogoMetro} alt="" />
-                </div>
-                <div>
+                </SliderItem>
+                <SliderItem>
                     <img src={LogoSilpo} alt="" />
-                </div>
+                </SliderItem>
             </Slider>
         </SliderBox>
     );
