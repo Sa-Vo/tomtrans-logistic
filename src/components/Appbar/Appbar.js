@@ -5,7 +5,7 @@ import { Wrapper } from '../../utils/VariablesStyled';
 
 const Header = styled.header`
     position: fixed;
-    height: 10vh;
+    height: 13vh;
     top: 0;
     left: 0;
     bottom: 0;
@@ -13,7 +13,7 @@ const Header = styled.header`
     z-index: 2;
 
     @media (max-width: 768px) {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     @media (min-width: 769px) {

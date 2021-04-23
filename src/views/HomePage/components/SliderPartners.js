@@ -19,6 +19,8 @@ export default function SliderPartners() {
     const settings = {
         arrows: false,
         infinite: true,
+        touchMove: false,
+        pauseOnHover: false,
         slidesToShow: 4,
         autoplay: true,
         speed: 2500,

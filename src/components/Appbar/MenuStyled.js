@@ -41,10 +41,17 @@ export const NavTop = styled.section`
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
+    @media (max-width: 425px) {
+        margin: 0 auto;
+    }
 `;
 
 export const LogoBox = styled.div`
     width: 9rem;
+    display: none;
+    @media (min-width: 769px) {
+        display: block;
+    }
 `;
 
 export const NavContactBox = styled.ul`
@@ -52,19 +59,25 @@ export const NavContactBox = styled.ul`
     list-style: none;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
 `;
 
 export const NavContactBoxItem = styled.li`
-    margin-right: 4rem;
+    @media (min-width: 425px) {
+        margin-right: 4rem;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     p {
         color: white;
         &:nth-child(1) {
             color: rgba(255, 255, 255, 0.5);
         }
-    }
-    &:last-child {
-        margin: 0;
     }
 `;
 
@@ -102,7 +115,7 @@ export const NavItem = styled.li`
         text-transform: uppercase;
         text-decoration: none;
         @media (max-width: 768px) {
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         &::after {

@@ -14,6 +14,7 @@ const ServiceData = [
         title: 'Логістика',
         imgSmall: `${SlideLogSmall}`,
         imgLarge: `${SlideLogLarge}`,
+        src: '/',
     },
 
     {
@@ -21,6 +22,7 @@ const ServiceData = [
         title: 'TIR Parking',
         imgSmall: `${SlideParkingSmall}`,
         imgLarge: `${SlideParkingLarge}`,
+        src: '/tir-parking',
     },
 
     {
@@ -28,6 +30,7 @@ const ServiceData = [
         title: 'Автосервіс',
         imgSmall: `${SlideCarServiceSmall}`,
         imgLarge: `${SlideCarServiceLarge}`,
+        src: '/car-service',
     },
 
     {
@@ -35,6 +38,7 @@ const ServiceData = [
         title: 'Хостел',
         imgSmall: `${SlideHostelSmall}`,
         imgLarge: `${SlideHostelLarge}`,
+        src: '/hostel',
     },
 ];
 

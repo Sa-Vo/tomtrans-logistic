@@ -13,7 +13,7 @@ export const ContactPage = styled.main`
         background-size: cover;
         background-image: url(${ContactBg});
         padding: 0 1rem;
-        height: 115rem;
+        height: 125rem;
 
         @media ${palette.device.laptop} {
             height: 100vh;
@@ -27,20 +27,20 @@ export const ContactPage = styled.main`
 
 export const MapBox = styled.div`
     ${palette.Wrapper}
-    padding-top: 15rem;
+    padding-top: 13rem;
 
     @media ${palette.device.tablet} {
-        padding-top: 15rem;
+        padding-top: 18rem;
     }
 
     @media ${palette.device.laptop} {
-        padding-top: 18rem;
+        padding-top: 30rem;
         display: flex;
         justify-content: space-between;
     }
 
     @media ${palette.device.laptopL} {
-        padding-top: 25rem;
+        padding-top: 20rem;
         display: flex;
         justify-content: space-between;
     }
@@ -48,22 +48,29 @@ export const MapBox = styled.div`
     iframe {
         border: none;
         width: 100%;
-        @media (min-width: 320px) and (max-width: 1023px) {
+        @media (min-width: 320px) and (max-width: 767px) {
             margin-top: 2rem;
             height: 45rem;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-radius: 2rem;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            height: 35rem;
+            margin-top: 1rem;
+            border-radius: 2rem;
         }
         @media ${palette.device.laptop} {
             width: 60%;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
         }
     }
 
     h1 {
-        padding-top: 1rem;
         text-align: center;
+        padding-bottom: 2rem;
+        @media ${palette.device.laptop} {
+            padding-bottom: 3rem;
+        }
     }
 `;
 
@@ -72,38 +79,41 @@ export const Info = styled.div`
     background-color: rgba(255, 255, 255, 0.9);
 
     @media (min-width: 320px) and (max-width: 1023px) {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-radius: 2rem;
     }
     @media ${palette.device.laptop} {
         padding: 5rem 0;
         width: 40%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
     }
 `;
 
 export const InfoList = styled.div``;
 
 export const InfoItem = styled.article`
-    /* max-width: 35rem; */
     margin: 0 auto;
     background-color: white;
     border-radius: 2rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
     box-shadow: 9.057px 7.873px 30.4px 1.6px rgba(0, 0, 0, 0.24);
     @media ${palette.device.laptop} {
-        margin: 0 2rem;
+        margin: 1rem 2rem;
         max-width: 40rem;
     }
     @media ${palette.device.laptopL} {
         margin: 0 auto;
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 `;
 
 export const InfoTitle = styled.p`
-    margin: 1rem 4rem;
-    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
 
     @media ${palette.device.tablet} {
         p {
@@ -120,28 +130,29 @@ export const PhoneBox = styled.ul`
     font-size: 1.5rem;
 
     @media ${palette.device.tablet} {
-        p {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+        font-size: 2rem;
     }
+`;
+
+export const Text = styled.p`
+    font-size: 2rem;
+    margin-bottom: 1rem;
 `;
 
 export const PhoneItem = styled.li`
     display: flex;
 `;
 
-export const Phone = styled.p`
+export const Phone = styled.a`
+    text-decoration: none;
     color: #277a35;
     font-weight: 500;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 
     @media ${palette.device.tablet} {
-        p {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 `;
 
@@ -151,14 +162,15 @@ export const Name = styled.p`
 `;
 export const EmailBox = styled.div`
     color: #277a35;
-    margin: 1rem 3rem;
+    margin: 0 3rem;
     font-weight: 500;
     font-size: 1.5rem;
 
+    p {
+        margin-bottom: 1rem;
+    }
+
     @media ${palette.device.tablet} {
-        p {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+        font-size: 2rem;
     }
 `;

@@ -41,6 +41,7 @@ export const InputBox = styled.div`
 
     input {
         font-size: 2rem;
+        color: #a1a5a9;
         border-bottom: 3px solid #a1a5a9;
 
         &:focus {
@@ -61,21 +62,21 @@ export const InputBox = styled.div`
 `;
 
 export const MoreInfo = styled.textarea`
-    width: 100%;
+    width: 99%;
     height: 30rem;
     font-size: 3rem;
-    border-radius: 10px;
-    border: 3px solid gray;
-    background-color: rgba(255, 255, 255, 0.712);
+    border: none;
+    outline: none;
+    background-color: #e0e6ef;
     transition: 0.5s all;
 
     @media ${palette.device.laptop} {
         width: 50%;
-    }
-
-    &:focus {
-        outline: none;
-        border: 3px solid ${palette.green};
+        border: 3px solid gray;
+        &:focus {
+            outline: none;
+            border: 3px solid ${palette.green};
+        }
     }
 `;
 

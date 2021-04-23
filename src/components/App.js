@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from '../views/HomePage/Home';
-import AboutUs from '../views/AboutUs/AboutUs';
+// import AboutUs from '../views/AboutUs/AboutUs';
 import CarService from '../views/CarService/CarService';
 import Contact from '../views/Contact/Contact';
 import NotFound from '../views/PageError/PageError';
@@ -12,7 +12,7 @@ const App = () => (
     <Layout>
         <Switch>
             <Route path={routes.home} exact component={Home} />
-            <Route path={routes.aboutUs} component={AboutUs} />
+            {/* <Route path={routes.aboutUs} component={AboutUs} /> */}
             <Route path={routes.carService} component={CarService} />
             {/* <Route path={routes.vacancies} component={AboutUs} />
             <Route path={routes.hostel} component={AboutUs} />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import routes from '../../routes';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
@@ -17,8 +17,6 @@ import {
 } from './MenuStyled';
 import imgLogoPath from '../../assets/Logo.png';
 
-// const removC = () => ()
-
 const RightNav = () => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
@@ -35,7 +33,9 @@ const RightNav = () => {
                 </BurgerClose>
                 <NavTop>
                     <LogoBox>
-                        <img src={imgLogoPath} alt="logo" />
+                        <Link to="/">
+                            <img src={imgLogoPath} alt="logo" />
+                        </Link>
                     </LogoBox>
 
                     <NavContactBox>
@@ -45,7 +45,7 @@ const RightNav = () => {
                         </NavContactBoxItem>
                         <NavContactBoxItem>
                             <p>Телефон</p>
-                            <p>+380(99)9736823</p>
+                            <p>+380(99)973-68-23</p>
                         </NavContactBoxItem>
                     </NavContactBox>
                 </NavTop>
@@ -65,7 +65,7 @@ const RightNav = () => {
                             to={routes.tirParking}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Tir Parking
+                            Про нас
                         </NavLink>
                     </NavItem>
 
@@ -92,7 +92,7 @@ const RightNav = () => {
                             to={routes.aboutUs}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Про нас
+                            Tir Parking
                         </NavLink>
                     </NavItem>
 

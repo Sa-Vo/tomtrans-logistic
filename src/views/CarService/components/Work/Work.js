@@ -24,14 +24,13 @@ class Work extends React.Component {
 
                     <SubText>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Vero, ipsa?
+                            Ми цінуємо кожного клієнта та надаємо якісний сервіс
+                            в Чернівцях
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Repudiandae deleniti exercitationem ipsam
-                            repellat animi! Eius ducimus nam commodi odio
-                            possimus!
+                            Тому ось декілька пунктів, щоб ви могли легко
+                            дізнатись як ми працюємо, для того щоб здати машину
+                            на ремонт в наш сервіс.
                         </p>
                     </SubText>
                     <Link

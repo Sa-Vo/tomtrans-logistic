@@ -10,60 +10,60 @@ export const ServiceBox = styled.ul`
     @media ${palette.device.laptop} {
         display: flex;
     }
-`;
 
-export const ServiceItem = styled.li`
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: ${palette.shadow};
-    transition: all 0.5s ease;
-    margin: 0 auto 3rem;
-    &:last-child {
-        margin: 0 auto;
-    }
-    @media ${palette.device.mobileL} {
-        width: 35rem;
-    }
-    @media ${palette.device.tablet} {
-        width: 60rem;
-    }
-    @media ${palette.device.laptop} {
-        margin: 0 3rem 0 0;
-
+    li {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: ${palette.shadow};
+        transition: all 0.5s ease;
+        margin: 0 auto 3rem;
         &:last-child {
-            margin: 0;
+            margin: 0 auto;
         }
-    }
+        @media ${palette.device.mobileL} {
+            width: 35rem;
+        }
+        @media ${palette.device.tablet} {
+            width: 60rem;
+        }
+        @media ${palette.device.laptop} {
+            margin: 0 3rem 0 0;
 
-    &:after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-            0deg,
-            rgba(20, 85, 115, 1) 5%,
-            rgba(20, 85, 115, 0) 100%
-        );
-        transition: all 0.5s ease;
-    }
-    &:hover {
-        transition: all 0.5s ease;
-        transform: scale(1.05);
-    }
-    &:hover {
-        h3 {
-            color: white;
-            font-size: 3.5rem;
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                0deg,
+                rgba(20, 85, 115, 1) 5%,
+                rgba(20, 85, 115, 0) 100%
+            );
             transition: all 0.5s ease;
         }
-    }
+        &:hover {
+            transition: all 0.5s ease;
+            transform: scale(1.05);
+        }
+        &:hover {
+            h3 {
+                color: white;
+                font-size: 3.5rem;
+                transition: all 0.5s ease;
+            }
+        }
 
-    &:hover:after {
-        top: 0;
+        &:hover:after {
+            top: 0;
+        }
     }
 `;
 

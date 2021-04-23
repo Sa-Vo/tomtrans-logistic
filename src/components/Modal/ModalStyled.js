@@ -17,7 +17,7 @@ export const ButtonModal = styled.button`
     ${Button}
     position: absolute;
     top: 70%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(21, 21, 21, 0.8);
 
     @media ${palette.device.tablet} {
         left: 11%;

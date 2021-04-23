@@ -7,7 +7,7 @@ import * as palette from '../../../../utils/VariablesStyled';
 export const TitleWrapp = styled.div`
     color: white;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -75,7 +75,8 @@ export const Title = () => (
     <TitleBox>
         <h1>Ремонт вашого автомобіля</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. quibusdam.
+            Кращий сервiс по обслуговуванню та ремонту легкових та грузових
+            автомобiлiв
         </p>
     </TitleBox>
 );
