@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import routes from '../../routes';
+import { useTranslation } from 'react-i18next';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
+import routes from '../../routes';
+
 import {
     Burger,
     BurgerClose,
@@ -20,6 +22,11 @@ import imgLogoPath from '../../assets/Logo.png';
 const RightNav = () => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
+
+    const { t, i18n } = useTranslation();
+    const changeLanguage = language => {
+        i18n.changeLanguage(language);
+    };
 
     return (
         <>
@@ -48,6 +55,29 @@ const RightNav = () => {
                             <p>+380(99)973-68-23</p>
                         </NavContactBoxItem>
                     </NavContactBox>
+
+                    <select name="format" id="format">
+                        {/* <option selected disabled>
+                            Choose a book format
+                        </option> */}
+                        <option selected value="pdf">
+                            <div></div>
+                        </option>
+                        <option
+                            value="txt"
+                            onClick={() => changeLanguage('ua')}
+                        >
+                            UA
+                        </option>
+                        <option value="epub">ePub</option>
+                        <option value="fb2">fb2</option>
+                        <option value="mobi">mobi</option>
+                    </select>
+
+                    {/* <div>
+                        <button onClick={() => changeLanguage('en')}>EN</button>
+                        <button onClick={() => changeLanguage('ua')}>UA</button>
+                    </div> */}
                 </NavTop>
                 <NavItemBox onClick={showSidebar}>
                     <NavItem>
@@ -56,7 +86,7 @@ const RightNav = () => {
                             exact
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Головна
+                            {t('link.home')}
                         </NavLink>
                     </NavItem>
 
@@ -65,7 +95,7 @@ const RightNav = () => {
                             to={routes.tirParking}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Про нас
+                            {t('link.aboutUs')}
                         </NavLink>
                     </NavItem>
 
@@ -74,7 +104,7 @@ const RightNav = () => {
                             to={routes.carService}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Автосервіс
+                            {t('link.carService')}
                         </NavLink>
                     </NavItem>
 
@@ -83,7 +113,7 @@ const RightNav = () => {
                             to={routes.hostel}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Хостел
+                            {t('link.hostel')}
                         </NavLink>
                     </NavItem>
 
@@ -92,7 +122,7 @@ const RightNav = () => {
                             to={routes.aboutUs}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Tir Parking
+                            {t('link.tirParking')}
                         </NavLink>
                     </NavItem>
 
@@ -101,7 +131,7 @@ const RightNav = () => {
                             to={routes.contacts}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
-                            Контакти
+                            {t('link.contact')}
                         </NavLink>
                     </NavItem>
                 </NavItemBox>

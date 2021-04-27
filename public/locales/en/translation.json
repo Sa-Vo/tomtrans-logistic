@@ -1,0 +1,15 @@
+{
+    "link": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "carService": "Car Service",
+        "hostel": "Hostel",
+        "tirParking": "Tir Parking",
+        "contact": "Contacts"
+    },
+
+    "btn": {
+        "submitStatement": "Submit",
+        "submitForm": "Submit"
+    }
+}

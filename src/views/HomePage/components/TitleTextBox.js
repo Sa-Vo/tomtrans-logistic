@@ -1,6 +1,7 @@
 import React from 'react';
 import * as palette from '../../../utils/VariablesStyled';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const Box = styled.article`
     color: white;
@@ -55,14 +56,17 @@ const Box = styled.article`
     }
 `;
 
-const TitleTextBox = () => (
-    <Box>
-        <h1>
-            Міжнародні <br /> перевезення
-        </h1>
-        <p>Потрібно шось кудись перевезти?</p>
-        <p>Подайте швидку заявку і ми допоможем вам</p>
-    </Box>
-);
+const TitleTextBox = () => {
+    const { t } = useTranslation();
+
+    return (
+        <Box>
+            <h1>{t('description.link')}</h1>
+
+            <p>Потрібно шось кудись перевезти?</p>
+            <p>Подайте швидку заявку і ми допоможем вам</p>
+        </Box>
+    );
+};
 
 export default TitleTextBox;

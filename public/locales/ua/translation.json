@@ -1,0 +1,15 @@
+{
+    "link": {
+        "home": "Головна",
+        "aboutUs": "Про нас",
+        "carService": "Автосервіс",
+        "hostel": "Хостел",
+        "tirParking": "Tir Parking",
+        "contact": "Контакти"
+    },
+
+    "btn": {
+        "submitStatement": "Подати заявку",
+        "submitForm": "Записатись"
+    }
+}

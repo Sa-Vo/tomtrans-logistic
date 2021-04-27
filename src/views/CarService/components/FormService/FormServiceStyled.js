@@ -62,6 +62,7 @@ export const InputBox = styled.div`
 `;
 
 export const MoreInfo = styled.textarea`
+    resize: none;
     width: 99%;
     height: 30rem;
     font-size: 3rem;
