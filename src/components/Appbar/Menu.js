@@ -51,33 +51,15 @@ const RightNav = () => {
                             <p>tomtranslogistic@ukr.net</p>
                         </NavContactBoxItem>
                         <NavContactBoxItem>
-                            <p>Телефон</p>
+                            <p>Phone</p>
                             <p>+380(99)973-68-23</p>
                         </NavContactBoxItem>
                     </NavContactBox>
 
-                    <select name="format" id="format">
-                        {/* <option selected disabled>
-                            Choose a book format
-                        </option> */}
-                        <option selected value="pdf">
-                            <div></div>
-                        </option>
-                        <option
-                            value="txt"
-                            onClick={() => changeLanguage('ua')}
-                        >
-                            UA
-                        </option>
-                        <option value="epub">ePub</option>
-                        <option value="fb2">fb2</option>
-                        <option value="mobi">mobi</option>
-                    </select>
-
-                    {/* <div>
+                    <div>
                         <button onClick={() => changeLanguage('en')}>EN</button>
                         <button onClick={() => changeLanguage('ua')}>UA</button>
-                    </div> */}
+                    </div>
                 </NavTop>
                 <NavItemBox onClick={showSidebar}>
                     <NavItem>

@@ -1,61 +1,26 @@
-import React from 'react';
-import {
-    Card,
-    SLiderImgBox,
-    SliderInfoBox,
-    ContentBox,
-    SliderTitle,
-    SLiderSubText,
-    SizeBox,
-    SizeBoxItem,
-} from './SliderStyled';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { languageCodeOnly } from '../../../../service/i18n';
+import Item from './Item';
 
-class SliderCard extends React.Component {
-    render() {
-        const { data } = this.props;
-        const size = {
-            length: 'Довжина:',
-            width: 'Ширина:',
-            height: 'Висота:',
-        };
-        return (
-            <>
-                {data.map((item, idx) => (
-                    <Card key={idx}>
-                        <SLiderImgBox>
-                            <img src={item.image} alt="" />
-                        </SLiderImgBox>
+const SliderCard = () => {
+    const { i18n } = useTranslation();
+    const [items, setItems] = useState([]);
+    useEffect(() => {
+        fetch(`/data/dataSliderCar/${languageCodeOnly(i18n.language)}.json`)
+            .then(response => response.json())
+            .then(json => setItems(json));
+    }, [i18n.language]);
 
-                        <SliderInfoBox>
-                            <ContentBox>
-                                <SliderTitle>{item.title}</SliderTitle>
-                                <SLiderSubText>{item.textOne}</SLiderSubText>
-                                <SLiderSubText>
-                                    <b>{item.textTwo}</b>
-                                </SLiderSubText>
-                            </ContentBox>
-                            <SizeBox>
-                                <SizeBoxItem>
-                                    <p>{size.length}</p>
-                                    <p>{item.lengthInfo}</p>
-                                </SizeBoxItem>
-
-                                <SizeBoxItem>
-                                    <p>{size.width}</p>
-                                    <p>{item.widthInfo}</p>
-                                </SizeBoxItem>
-
-                                <SizeBoxItem>
-                                    <p>{size.height}</p>
-                                    <p>{item.heightInfo}</p>
-                                </SizeBoxItem>
-                            </SizeBox>
-                        </SliderInfoBox>
-                    </Card>
-                ))}
-            </>
-        );
-    }
-}
+    return items.length === 0 ? (
+        <p>Loading...</p>
+    ) : (
+        <>
+            {items.map(item => (
+                <Item key={item.id} {...item} />
+            ))}
+        </>
+    );
+};
 
 export default SliderCard;

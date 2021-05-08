@@ -11,5 +11,37 @@
     "btn": {
         "submitStatement": "Submit",
         "submitForm": "Submit"
+    },
+
+    "titleSection": {
+        "carPark": "NULL",
+        "service": "NULL",
+        "partners": "NULL",
+        "location": "NULL"
+    },
+
+    "titlePage": {
+        "home": "NULL",
+        "carService": "NULL",
+
+        "subTitleHome": {
+            "descrFisrt": "NULL",
+            "descrSecond": "NULL"
+        },
+
+        "subTitleCarService": {
+            "descr": "NULL",
+            "location": "NULL",
+            "workTime": "NULL"
+        }
+    },
+
+    "contacts": {
+        "phone": "Phone",
+        "adress": "Adress",
+        "adressInfo": "NULL 3301",
+        "timeWork": "Time work",
+        "timeWorkInfo": "Mon-Sat 8.30 - 19.00",
+        "social": "Messengers"
     }
 }

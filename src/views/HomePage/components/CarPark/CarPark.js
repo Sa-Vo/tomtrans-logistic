@@ -1,32 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import Item from './Item';
+import { languageCodeOnly } from '../../../../service/i18n';
+import { BoxInfoCar } from './CarParkStyled';
 
-import {
-    BoxInfoCar,
-    BoxInfoCarItem,
-    Circle,
-    BoxDescrCar,
-} from './CarParkStyled';
+const CarPark = () => {
+    const { i18n } = useTranslation();
+    const [items, setItems] = useState([]);
 
-class CarPark extends React.Component {
-    render() {
-        const { carParkData } = this.props;
+    useEffect(() => {
+        fetch(`/data/dataCarPark/${languageCodeOnly(i18n.language)}.json`)
+            .then(response => response.json())
+            .then(json => setItems(json));
+    }, [i18n.language]);
 
-        return (
-            <BoxInfoCar>
-                {carParkData.map(info => (
-                    <BoxInfoCarItem key={info.id}>
-                        <div>
-                            <Circle>{info.count}</Circle>
-                        </div>
-                        <BoxDescrCar>
-                            <p>{info.infoTop}</p>
-                            <span>{info.infoBottom}</span>
-                        </BoxDescrCar>
-                    </BoxInfoCarItem>
-                ))}
-            </BoxInfoCar>
-        );
-    }
-}
+    return items.length === 0 ? (
+        <p>Loading...</p>
+    ) : (
+        <BoxInfoCar>
+            {items.map(item => (
+                <Item key={item.id} {...item} />
+            ))}
+        </BoxInfoCar>
+    );
+};
 
 export default CarPark;

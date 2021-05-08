@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -71,31 +72,36 @@ const SubTitleBox = styled.article`
     }
 `;
 
-export const Title = () => (
-    <TitleBox>
-        <h1>Ремонт вашого автомобіля</h1>
-        <p>
-            Кращий сервiс по обслуговуванню та ремонту легкових та грузових
-            автомобiлiв
-        </p>
-    </TitleBox>
-);
+export const Title = () => {
+    const { t } = useTranslation();
+    console.log(t);
+    return (
+        <TitleBox>
+            <h1>{t('titlePage.carService')}</h1>
+            <p>{t('titlePage.subTitleCarService.descr')}</p>
+        </TitleBox>
+    );
+};
 
-export const SubTitle = () => (
-    <SubTitleBox>
-        <div>
-            <span>
-                <FontAwesomeIcon icon={faMapMarkerAlt} />
-            </span>
+export const SubTitle = () => {
+    const { t } = useTranslation();
 
-            <p>м. Чернівці, вул. Чернівецька 12</p>
-        </div>
-        <div>
-            <span>
-                <FontAwesomeIcon icon={faClock} />
-            </span>
+    return (
+        <SubTitleBox>
+            <div>
+                <span>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                </span>
 
-            <p>Понеділок - Субота з 9:00 до 22:00</p>
-        </div>
-    </SubTitleBox>
-);
+                <p>{t('titlePage.subTitleCarService.location')}</p>
+            </div>
+            <div>
+                <span>
+                    <FontAwesomeIcon icon={faClock} />
+                </span>
+
+                <p>{t('titlePage.subTitleCarService.workTime')}</p>
+            </div>
+        </SubTitleBox>
+    );
+};

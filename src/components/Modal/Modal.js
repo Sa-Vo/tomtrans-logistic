@@ -16,7 +16,7 @@ const Modal = () => {
     return (
         <>
             <ModalBox>
-                <ButtonModal onClick={openModal}>{t('link.home')}</ButtonModal>
+                <ButtonModal onClick={openModal}>{t('btn.submitStatement')}</ButtonModal>
 
                 <ModalContent
                     showModal={showModal}

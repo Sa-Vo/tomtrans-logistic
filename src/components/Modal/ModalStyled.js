@@ -16,6 +16,7 @@ export const ButtonModal = styled.button`
     font-size: 2rem;
     ${Button}
     position: absolute;
+    min-width: 16.7rem;
     top: 70%;
     background-color: rgba(21, 21, 21, 0.8);
 

@@ -1,0 +1,40 @@
+[
+    {
+        "image": "../../img/FuraRef.png",
+        "title": "NULL",
+        "textOne": "NULL",
+        "textTwo": "NULL",
+        "lengthInfo": "NULL",
+        "widthInfo": "NULL",
+        "heightInfo": "NULL",
+        "length": "NULL",
+        "width": "NULL",
+        "height": "NULL"
+    },
+
+    {
+        "image": "../../img/FuraTent.png",
+        "title": "NULL",
+        "textOne": "NULL",
+        "textTwo": "NULL",
+        "lengthInfo": "13 620мм",
+        "widthInfo": "2 550мм",
+        "heightInfo": "2 600мм",
+        "length": "NULL",
+        "width": "NULL",
+        "height": "NULL"
+    },
+
+    {
+        "image": "../../img/FuraLittleRef.png",
+        "title": "NULL",
+        "textOne": "NULL",
+        "textTwo": "NULL",
+        "lengthInfo": "13 620мм",
+        "widthInfo": "2 550мм",
+        "heightInfo": "2 600мм",
+        "length": "NULL",
+        "width": "NULL",
+        "height": "NULL"
+    }
+]

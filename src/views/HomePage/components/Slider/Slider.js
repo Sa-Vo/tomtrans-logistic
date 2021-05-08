@@ -2,19 +2,12 @@ import React from 'react';
 import SliderCard from './SliderCard';
 import {
     Slider,
-    PrevArrow,
-    NextArrow,
     SliderBox,
-    ArrowBox,
 } from './SliderStyled';
-import SLiderData from './SliderData';
+
 import ArrowSlider from './ArrowSlider';
 
 class SliderCar extends React.Component {
-    state = {
-        data: SLiderData,
-    };
-
     myRef = React.createRef();
 
     prevClick = () => {
@@ -34,11 +27,10 @@ class SliderCar extends React.Component {
     };
 
     render() {
-        const { data } = this.state;
         return (
             <Slider>
                 <SliderBox ref={this.myRef}>
-                    <SliderCard data={data} />
+                    <SliderCard />
                 </SliderBox>
 
                 <ArrowSlider prev={this.prevClick} next={this.nextClick} />

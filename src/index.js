@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './base.css';
 import App from './components/App';
-import './i18n';
+import './service/i18n';
 
 ReactDOM.render(
     <BrowserRouter>

@@ -1,0 +1,33 @@
+[
+    {
+        "id": "0",
+        "title": "Logistic",
+        "imgSmall": "../../img/Service/service-logistics-small.png",
+        "imgLarge": "../../img/Service/service-logistics.png",
+        "src": "/"
+    },
+
+    {
+        "id": "1",
+        "title": "TIR Parking",
+        "imgSmall": "../../img/Service/service-tirparking-small.png",
+        "imgLarge": "../../img/Service/service-tirparking.png",
+        "src": "/tir-parking"
+    },
+
+    {
+        "id": "2",
+        "title": "Car Service",
+        "imgSmall": "../../img/Service/service-carservice-small.png",
+        "imgLarge": "../../img/Service/service-carservice.png",
+        "src": "/car-service"
+    },
+
+    {
+        "id": "3",
+        "title": "Hostel",
+        "imgSmall": "../../img/Service/service-hostel-small.png",
+        "imgLarge": "../../img/Service/service-hostel.png",
+        "src": "/hostel"
+    }
+]

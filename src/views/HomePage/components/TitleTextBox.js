@@ -61,10 +61,10 @@ const TitleTextBox = () => {
 
     return (
         <Box>
-            <h1>{t('description.link')}</h1>
+            <h1>{t('titlePage.home')}</h1>
 
-            <p>Потрібно шось кудись перевезти?</p>
-            <p>Подайте швидку заявку і ми допоможем вам</p>
+            <p>{t('titlePage.subTitleHome.descrFisrt')}</p>
+            <p>{t('titlePage.subTitleHome.descrSecond')}</p>
         </Box>
     );
 };
