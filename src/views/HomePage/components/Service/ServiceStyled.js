@@ -36,6 +36,7 @@ export const ServiceBox = styled.ul`
         }
 
         &:after {
+            z-index: 0;
             content: '';
             position: absolute;
             top: 100%;
@@ -50,11 +51,13 @@ export const ServiceBox = styled.ul`
             transition: all 0.5s ease;
         }
         &:hover {
+            z-index: 0;
             transition: all 0.5s ease;
             transform: scale(1.05);
         }
         &:hover {
             h3 {
+                z-index: 1;
                 color: white;
                 font-size: 3.5rem;
                 transition: all 0.5s ease;

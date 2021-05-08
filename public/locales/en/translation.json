@@ -2,9 +2,9 @@
     "link": {
         "home": "Home",
         "aboutUs": "About Us",
-        "carService": "Car Service",
+        "carService": "Autoservice",
         "hostel": "Hostel",
-        "tirParking": "Tir Parking",
+        "tirParking": "TIR Parking",
         "contact": "Contacts"
     },
 
@@ -14,33 +14,33 @@
     },
 
     "titleSection": {
-        "carPark": "NULL",
-        "service": "NULL",
-        "partners": "NULL",
-        "location": "NULL"
+        "carPark": "Our fleet",
+        "service": "Services",
+        "partners": "Our partners",
+        "location": "Where to find us"
     },
 
     "titlePage": {
-        "home": "NULL",
-        "carService": "NULL",
+        "home": "International transportation",
+        "carService": "Service your car",
 
         "subTitleHome": {
-            "descrFisrt": "NULL",
-            "descrSecond": "NULL"
+            "descrFisrt": "Need to deliver something somewhere?",
+            "descrSecond": "Fill form and we will help you"
         },
 
         "subTitleCarService": {
-            "descr": "NULL",
-            "location": "NULL",
-            "workTime": "NULL"
+            "descr": "The best service for maintenance and repair of cars and trucks",
+            "location": "Avtoshlyakh T 2603, Ridkivtsi, Chernivtsi oblast",
+            "workTime": "Monday - Saturday from 8:00 to 21:00"
         }
     },
 
     "contacts": {
         "phone": "Phone",
         "adress": "Adress",
-        "adressInfo": "NULL 3301",
-        "timeWork": "Time work",
+        "adressInfo": "Avtoshlyakh T 2603",
+        "timeWork": "Work time",
         "timeWorkInfo": "Mon-Sat 8.30 - 19.00",
         "social": "Messengers"
     }

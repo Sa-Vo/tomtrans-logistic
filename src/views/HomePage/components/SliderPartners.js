@@ -6,6 +6,7 @@ import LogoEpic from '../../../assets/LogoPartners/Epic.png';
 import LogoFozzy from '../../../assets/LogoPartners/Fozzy.png';
 import LogoMetro from '../../../assets/LogoPartners/Metro.png';
 import LogoSilpo from '../../../assets/LogoPartners/Silpo.png';
+import LogoAmic from '../../../assets/LogoPartners/Amic.png';
 
 const SliderBox = styled.div`
     padding: 4rem 0;
@@ -70,6 +71,9 @@ export default function SliderPartners() {
                 </SliderItem>
                 <SliderItem>
                     <img src={LogoSilpo} alt="" />
+                </SliderItem>
+                <SliderItem>
+                    <img src={LogoAmic} alt="" />
                 </SliderItem>
             </Slider>
         </SliderBox>

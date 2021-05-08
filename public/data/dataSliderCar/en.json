@@ -1,40 +1,40 @@
 [
     {
         "image": "../../img/FuraRef.png",
-        "title": "NULL",
-        "textOne": "NULL",
-        "textTwo": "NULL",
-        "lengthInfo": "NULL",
-        "widthInfo": "NULL",
-        "heightInfo": "NULL",
-        "length": "NULL",
-        "width": "NULL",
-        "height": "NULL"
+        "title": "Platform",
+        "textOne": "Refrigerated semi-trailer for transportation of frozen products.",
+        "textTwo": "Supported temperature: from + 25 ° C to -20 ° C",
+        "lengthInfo": "13 620mm",
+        "widthInfo": "2 550mm",
+        "heightInfo": "2 600mm",
+        "length": "Length:",
+        "width": "Width:",
+        "height": "Height:"
     },
 
     {
         "image": "../../img/FuraTent.png",
-        "title": "NULL",
-        "textOne": "NULL",
-        "textTwo": "NULL",
-        "lengthInfo": "13 620мм",
-        "widthInfo": "2 550мм",
-        "heightInfo": "2 600мм",
-        "length": "NULL",
-        "width": "NULL",
-        "height": "NULL"
+        "title": "Platform",
+        "textOne": "Refrigerated semi-trailer for transportation of frozen products.",
+        "textTwo": "Supported temperature: from + 25 ° C to -20 ° C",
+        "lengthInfo": "13 620mm",
+        "widthInfo": "2 550mm",
+        "heightInfo": "2 600mm",
+        "length": "Length:",
+        "width": "Width:",
+        "height": "Height:"
     },
 
     {
         "image": "../../img/FuraLittleRef.png",
-        "title": "NULL",
-        "textOne": "NULL",
-        "textTwo": "NULL",
-        "lengthInfo": "13 620мм",
-        "widthInfo": "2 550мм",
-        "heightInfo": "2 600мм",
-        "length": "NULL",
-        "width": "NULL",
-        "height": "NULL"
+        "title": "Platform",
+        "textOne": "Refrigerated semi-trailer for transportation of frozen products.",
+        "textTwo": "Supported temperature: from + 25 ° C to -20 ° C",
+        "lengthInfo": "13 620mm",
+        "widthInfo": "2 550mm",
+        "heightInfo": "2 600mm",
+        "length": "Length:",
+        "width": "Width:",
+        "height": "Height:"
     }
 ]
