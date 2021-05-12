@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ModalContent } from './ModalServiceContent';
 import {
     ModalBox,
@@ -12,10 +13,12 @@ const Modal = () => {
         setShowModal(prev => !prev);
     };
 
+    const { t } = useTranslation();
+
     return (
         <>
             <ModalBox>
-                <ButtonModal onClick={openModal}>Подати заявку</ButtonModal>
+                <ButtonModal onClick={openModal}>{t('btn.submitStatement')}</ButtonModal>
 
                 <ModalContent
                     showModal={showModal}

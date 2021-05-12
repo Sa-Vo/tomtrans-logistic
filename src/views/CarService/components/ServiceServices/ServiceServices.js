@@ -1,35 +1,34 @@
-import React from 'react';
-import {
-    Link,
-    DirectLink,
-    Element,
-    Events,
-    animateScroll as scroll,
-    scrollSpy,
-    scroller,
-} from 'react-scroll';
-
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { languageCodeOnly } from '../../../../service/i18n';
 import { Title, Services, ServicesItem } from './ServiceServicesStyled';
 
-class ServiceServices extends React.Component {
-    render() {
-        const { title, serviceData } = this.props;
-        return (
-            <div>
-                <Title>{title}</Title>
-                <Services>
-                    {serviceData.map(info => (
-                        <ServicesItem key={info.id}>
-                            <div>
-                                <img src={info.ico} alt="" />
-                            </div>
-                            <h3>{info.title}</h3>
-                        </ServicesItem>
-                    ))}
-                </Services>
-            </div>
-        );
-    }
-}
+const ServiceServices = () => {
+    const { t, i18n } = useTranslation();
+    const [items, setItems] = useState([]);
+    useEffect(() => {
+        fetch(`/data/serviceServices/${languageCodeOnly(i18n.language)}.json`)
+            .then(response => response.json())
+            .then(json => setItems(json));
+    }, [i18n.language]);
+
+    return items.length === 0 ? (
+        <p>Loading...</p>
+    ) : (
+        <div>
+            <Title>{t('ServiceServicesTitle')}</Title>
+            <Services>
+                {items.map(item => (
+                    <ServicesItem key={item.id}>
+                        <div>
+                            <img src={item.ico} alt="" />
+                        </div>
+                        <h3>{item.title}</h3>
+                    </ServicesItem>
+                ))}
+            </Services>
+        </div>
+    );
+};
 
 export default ServiceServices;

@@ -18,12 +18,15 @@ import {
     activeStyle,
 } from './MenuStyled';
 import imgLogoPath from '../../assets/Logo.png';
+import ua from '../../assets/ua.png';
+import en from '../../assets/en.png';
 
 const RightNav = () => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
 
     const { t, i18n } = useTranslation();
+
     const changeLanguage = language => {
         i18n.changeLanguage(language);
     };
@@ -56,10 +59,24 @@ const RightNav = () => {
                         </NavContactBoxItem>
                     </NavContactBox>
 
-                    <div>
+                    <select
+                        value={i18n.language}
+                        onChange={e => i18n.changeLanguage(e.target.value)}
+                    >
+                        <option value="en">
+                            <img src={en} alt="" />
+                            English
+                        </option>
+                        <option value="ua">
+                            <img src={ua} alt="" />
+                            Ukraine
+                        </option>
+                    </select>
+
+                    {/* <div>
                         <button onClick={() => changeLanguage('en')}>EN</button>
                         <button onClick={() => changeLanguage('ua')}>UA</button>
-                    </div>
+                    </div> */}
                 </NavTop>
                 <NavItemBox onClick={showSidebar}>
                     <NavItem>

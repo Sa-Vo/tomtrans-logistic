@@ -10,7 +10,8 @@
 
     "btn": {
         "submitStatement": "Submit",
-        "submitForm": "Submit"
+        "submitForm": "Submit",
+        "submit": "Submit"
     },
 
     "titleSection": {
@@ -43,5 +44,41 @@
         "timeWork": "Work time",
         "timeWorkInfo": "Mon-Sat 8.30 - 19.00",
         "social": "Messengers"
+    },
+
+    "howWeWork": {
+        "title": "NULL",
+        "decrOne": "NULL",
+        "decrTwo": "NULL",
+        "btn": "Submit"
+    },
+
+    "ServiceServicesTitle": "Service Services",
+
+    "form": {
+        "title": "NULL",
+        "fullName": "Full name",
+        "phone": "Phone",
+        "email": "E-mail",
+        "pointStart": "NULL",
+        "pointEnd": "NULL",
+        "goods": "Goods",
+        "describeProblem": "NULL",
+        "car": "Car"
+    },
+
+    "contactPage": {
+        "title": "NULL",
+        "maksym": "Maksym",
+        "vadim": "Vadim",
+        "ivan": "Ivan",
+        "sergii": "Sergii",
+        "lyudmyla": "Lyudmyla",
+        "logistics": "Logistics",
+        "accounting": "Accounting",
+        "address": "Address",
+        "adressInfo": "Avtoshlyakh T 2603",
+        "workTime": "Work Time",
+        "workTimeInfo": "Mon - Sat from 8:00 to 21:00"
     }
 }

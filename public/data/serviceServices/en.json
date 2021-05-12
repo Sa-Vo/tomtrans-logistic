@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "title": "NULL",
+        "ico": "../../img/ServiceServices/document.png"
+    },
+
+    {
+        "id": 1,
+        "title": "NULL",
+        "ico": "../../img/ServiceServices/engine.png"
+    },
+
+    {
+        "id": 2,
+        "title": "NULL",
+        "ico": "../../img/ServiceServices/suspension.png"
+    },
+
+    {
+        "id": 3,
+        "title": "NULL",
+        "ico": "../../img/ServiceServices/com-diagnostics.png"
+    },
+
+    {
+        "id": 4,
+        "title": "NULL",
+        "ico": "../../img/ServiceServices/gasoline.png"
+    },
+
+    {
+        "id": 5,
+        "title": "NULL",
+        "ico": "../../img/ServiceServices/brake-disc.png"
+    }
+]

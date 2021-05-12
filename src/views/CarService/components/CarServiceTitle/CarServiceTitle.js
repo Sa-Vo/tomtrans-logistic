@@ -18,7 +18,7 @@ export const TitleWrapp = styled.div`
         left: 42%;
     }
     @media ${palette.device.laptop} {
-        top: 45%;
+        top: 50%;
         left: 28%;
     }
 `;
@@ -74,7 +74,7 @@ const SubTitleBox = styled.article`
 
 export const Title = () => {
     const { t } = useTranslation();
-    console.log(t);
+    
     return (
         <TitleBox>
             <h1>{t('titlePage.carService')}</h1>

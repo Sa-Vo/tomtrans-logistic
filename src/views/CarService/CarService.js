@@ -19,19 +19,18 @@ import Modal from './components/ModalService/ModalService';
 import Location from './components/Location/Location';
 import FormService from './components/FormService/FormService';
 
-import serviceData from './Data/ServiceData';
-import workData from './Data/WorkData';
-
 export default class CarService extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
     }
+    
     render() {
         return (
             <>
                 <Helmet>
                     <title>Car Service</title>
                 </Helmet>
+
                 <CarServPage>
                     <CarServSlide>
                         <TitleWrapp>
@@ -43,14 +42,11 @@ export default class CarService extends Component {
                     </CarServSlide>
 
                     <SectionLong darkTheme>
-                        <Work title={'Як ми працюєм'} workData={workData} />
+                        <Work />
                     </SectionLong>
 
                     <Wrapper>
-                        <ServiceServices
-                            title={'Послуги сервісу'}
-                            serviceData={serviceData}
-                        />
+                        <ServiceServices />
                     </Wrapper>
 
                     <FormBox darkTheme>
@@ -60,7 +56,7 @@ export default class CarService extends Component {
                     </FormBox>
 
                     <Section darkTheme>
-                        <Location title={'Де нас знайти'} />
+                        <Location />
                     </Section>
                 </CarServPage>
             </>

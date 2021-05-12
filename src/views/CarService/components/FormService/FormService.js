@@ -1,65 +1,75 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Box, Form, InputBox, MoreInfo, ButtonForm } from './FormServiceStyled';
-const FormService = () => (
-    <>
-        <Form name="formService" method="post">
-            <h3>Швидка заявка</h3>
-            <Box>
-                <div>
-                    <input type="hidden" name="form-name" value="formService" />
-                    <InputBox>
+
+const FormService = () => {
+    const { t } = useTranslation();
+
+    return (
+        <>
+            <Form name="formService" method="post">
+                <h3>{t('form.title')}</h3>
+                <Box>
+                    <div>
                         <input
-                            type="text"
-                            name="name"
-                            required
-                            autoComplete="off"
+                            type="hidden"
+                            name="form-name"
+                            value="formService"
                         />
-                        <label>ПІБ</label>
-                    </InputBox>
+                        <InputBox>
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                autoComplete="off"
+                            />
+                            <label>{t('form.fullName')}</label>
+                        </InputBox>
 
-                    <InputBox>
-                        <input
-                            type="text"
-                            name="phone"
-                            required
-                            autoComplete="off"
-                        />
-                        <label>Телефон</label>
-                    </InputBox>
+                        <InputBox>
+                            <input
+                                type="text"
+                                name="phone"
+                                required
+                                autoComplete="off"
+                            />
+                            <label>{t('form.phone')}</label>
+                        </InputBox>
 
-                    <InputBox>
-                        <input
-                            type="text"
-                            name="email"
-                            required
-                            autoComplete="off"
-                        />
-                        <label>E-mail</label>
-                    </InputBox>
+                        <InputBox>
+                            <input
+                                type="text"
+                                name="email"
+                                required
+                                autoComplete="off"
+                            />
+                            <label>{t('form.email')}</label>
+                        </InputBox>
 
-                    <InputBox>
-                        <input
-                            type="text"
-                            name="carService"
-                            required
-                            autoComplete="off"
-                        />
-                        <label>Машина</label>
-                    </InputBox>
-                </div>
+                        <InputBox>
+                            <input
+                                type="text"
+                                name="carService"
+                                required
+                                autoComplete="off"
+                            />
+                            <label>{t('form.car')}</label>
+                        </InputBox>
+                    </div>
 
-                <MoreInfo
-                    type="text"
-                    name="problemService"
-                    required
-                    autoComplete="off"
-                    placeholder="Опишіть проблему:"
-                ></MoreInfo>
-            </Box>
+                    <MoreInfo
+                        type="text"
+                        name="problemService"
+                        required
+                        autoComplete="off"
+                        placeholder={t('form.describeProblem')}
+                    ></MoreInfo>
+                </Box>
 
-            <ButtonForm type="submit">Відправити</ButtonForm>
-        </Form>
-    </>
-);
+                <ButtonForm type="submit">{t('btn.submit')}</ButtonForm>
+            </Form>
+        </>
+    );
+};
 
 export default FormService;

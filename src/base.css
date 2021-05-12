@@ -47,6 +47,24 @@ h6 {
 p {
     margin: 0;
 }
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    height: 5rem;
+    width: 7rem;
+    line-height: 3;
+
+    overflow: hidden;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
 /* .navbar {
     background-color: #060b26;
     height: 80px;
