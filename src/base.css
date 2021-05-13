@@ -58,8 +58,7 @@ select {
     box-shadow: none;
     height: 5rem;
     width: 7rem;
-    line-height: 3;
-
+    line-height: 3 ;
     overflow: hidden;
     border-radius: 0.25em;
     cursor: pointer;

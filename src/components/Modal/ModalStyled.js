@@ -17,14 +17,14 @@ export const ButtonModal = styled.button`
     ${Button}
     position: absolute;
     min-width: 16.7rem;
-    top: 82%;
+    top: 75%;
     background-color: rgba(21, 21, 21, 0.8);
 
     @media ${palette.device.tablet} {
-        left: 11%;
+        left: 13%;
     }
     @media ${palette.device.laptopL} {
-        left: 15%;
+        left: 17%;
     }
 `;
 

@@ -63,14 +63,9 @@ const RightNav = () => {
                         value={i18n.language}
                         onChange={e => i18n.changeLanguage(e.target.value)}
                     >
-                        <option value="en">
-                            <img src={en} alt="" />
-                            English
-                        </option>
-                        <option value="ua">
-                            <img src={ua} alt="" />
-                            Ukraine
-                        </option>
+                        <option value="en">ENG</option>
+                        <option value="ua">UKR</option>
+                        <option value="ru">RU</option>
                     </select>
 
                     {/* <div>

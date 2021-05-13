@@ -48,6 +48,12 @@ export const SocialBox = styled.div`
 
 export const SocialItem = styled.div`
     ${SocialItemDef}
+    width: 50px;
+    height: 50px;
+    shape-outside: circle();
+    clip-path: circle();
+    background-color: #111111;
+    box-shadow: 9.057px 7.873px 30.4px 1.6px rgba(0, 0, 0, 0.24);
     a {
         color: #4c4c4c;
     }

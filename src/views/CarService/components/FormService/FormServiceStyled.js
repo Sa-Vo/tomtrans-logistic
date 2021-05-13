@@ -62,10 +62,11 @@ export const InputBox = styled.div`
 `;
 
 export const MoreInfo = styled.textarea`
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     resize: none;
     width: 99%;
     height: 30rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border: none;
     outline: none;
     background-color: #e0e6ef;
@@ -73,7 +74,7 @@ export const MoreInfo = styled.textarea`
 
     @media ${palette.device.laptop} {
         width: 50%;
-        border: 3px solid gray;
+        border: 3px solid #212121;
         &:focus {
             outline: none;
             border: 3px solid ${palette.green};
