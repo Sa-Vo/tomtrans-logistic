@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "number": "01",
+        "title": "Enrollment",
+        "text": "We provide advice and determine the dates and times of repair of your car"
+    },
+
+    {
+        "id": 1,
+        "number": "02",
+        "title": "Service",
+        "text": "We perform repair, prevention, or diagnostics of the car"
+    },
+
+    {
+        "id": 2,
+        "number": "03",
+        "title": "Review",
+        "text": "The master reports the work, the client checks the car"
+    },
+
+    {
+        "id": 3,
+        "number": "04",
+        "title": "Payment",
+        "text": "After successful verification, the client pays for the service"
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "image": "../../img/FuraRef.png",
+        "title": "Platform",
+        "textOne": "Refrigerated semi-trailer for transportation of frozen products.",
+        "textTwo": "Supported temperature: from + 25 ° C to -20 ° C",
+        "lengthInfo": "13 620mm",
+        "widthInfo": "2 550mm",
+        "heightInfo": "2 600mm",
+        "length": "Length:",
+        "width": "Width:",
+        "height": "Height:"
+    },
+
+    {
+        "image": "../../img/FuraTent.png",
+        "title": "Platform",
+        "textOne": "Refrigerated semi-trailer for transportation of frozen products.",
+        "textTwo": "Supported temperature: from + 25 ° C to -20 ° C",
+        "lengthInfo": "13 620mm",
+        "widthInfo": "2 550mm",
+        "heightInfo": "2 600mm",
+        "length": "Length:",
+        "width": "Width:",
+        "height": "Height:"
+    },
+
+    {
+        "image": "../../img/FuraLittleRef.png",
+        "title": "Platform",
+        "textOne": "Refrigerated semi-trailer for transportation of frozen products.",
+        "textTwo": "Supported temperature: from + 25 ° C to -20 ° C",
+        "lengthInfo": "13 620mm",
+        "widthInfo": "2 550mm",
+        "heightInfo": "2 600mm",
+        "length": "Length:",
+        "width": "Width:",
+        "height": "Height:"
+    }
+]

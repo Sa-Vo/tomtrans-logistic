@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "count": "50+",
+        "infoTop": "trucks",
+        "infoBottom": "in the fleet"
+    },
+
+    {
+        "id": 1,
+        "count": "21",
+        "infoTop": "tons",
+        "infoBottom": "capacity"
+    },
+
+    {
+        "id": 2,
+        "count": "86",
+        "infoTop": "m3",
+        "infoBottom": "trailer volume"
+    }
+]

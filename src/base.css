@@ -56,12 +56,13 @@ select {
     appearance: none;
     outline: 0;
     box-shadow: none;
-    height: 5rem;
+    height: 4rem;
     width: 7rem;
-    line-height: 3 ;
+    line-height: 3;
     overflow: hidden;
     border-radius: 0.25em;
     cursor: pointer;
+    text-align-last: center;
 }
 
 /* .navbar {
@@ -81,4 +82,47 @@ select {
         margin-right: 2rem;
         height: 100px;
     }
+}
+.select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.option {
+    /* padding: 0 20px 0 10px; */
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+
+    pointer-events: none;
+    order: 2;
+    z-index: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.select:focus .option {
+    position: relative;
+    pointer-events: all;
+}
+
+input {
+    opacity: 0;
+    position: absolute;
+    left: -99999px;
+}
+
+input:checked + label {
+    order: 1;
+    z-index: 2;
+    border-top: none;
+    position: relative;
 }

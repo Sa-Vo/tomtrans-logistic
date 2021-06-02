@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-
 import { HomePage, HomeSlide } from './HomeStyled';
 import TitleTextBox from './components/TitleTextBox';
 import Modal from '../../components/Modal/Modal';

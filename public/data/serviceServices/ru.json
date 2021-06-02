@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "title": "Selection of spare parts",
+        "ico": "../../img/ServiceServices/document.png"
+    },
+
+    {
+        "id": 1,
+        "title": "Engine maintenance",
+        "ico": "../../img/ServiceServices/engine.png"
+    },
+
+    {
+        "id": 2,
+        "title": "Chassis repair",
+        "ico": "../../img/ServiceServices/suspension.png"
+    },
+
+    {
+        "id": 3,
+        "title": "Computer diagnostics",
+        "ico": "../../img/ServiceServices/com-diagnostics.png"
+    },
+
+    {
+        "id": 4,
+        "title": "Oil change",
+        "ico": "../../img/ServiceServices/gasoline.png"
+    },
+
+    {
+        "id": 5,
+        "title": "Brake system maintenance",
+        "ico": "../../img/ServiceServices/brake-disc.png"
+    }
+]

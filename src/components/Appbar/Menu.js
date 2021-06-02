@@ -20,16 +20,13 @@ import {
 import imgLogoPath from '../../assets/Logo.png';
 import ua from '../../assets/ua.png';
 import en from '../../assets/en.png';
+import ru from '../../assets/ru.png';
 
 const RightNav = () => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
 
     const { t, i18n } = useTranslation();
-
-    const changeLanguage = language => {
-        i18n.changeLanguage(language);
-    };
 
     return (
         <>
@@ -59,19 +56,58 @@ const RightNav = () => {
                         </NavContactBoxItem>
                     </NavContactBox>
 
-                    <select
+                    {/* <select
                         value={i18n.language}
                         onChange={e => i18n.changeLanguage(e.target.value)}
                     >
-                        <option value="en">ENG</option>
+                        <option value="en">EN</option>
                         <option value="ua">UKR</option>
                         <option value="ru">RU</option>
-                    </select>
+                    </select> */}
+                    <ul
+                        class="select"
+                        tabindex="1"
+                        value={i18n.language}
+                        onChange={e => i18n.changeLanguage(e.target.value)}
+                    >
+                        <li>
+                            <input
+                                value="en"
+                                class="selectopt"
+                                name="test"
+                                type="radio"
+                                id="opt1"
+                            />
+                            <label for="opt1" class="option">
+                                <img src={en} alt="en" />
+                            </label>
+                        </li>
+                        <li>
+                            <input
+                                value="ua"
+                                class="selectopt"
+                                name="test"
+                                type="radio"
+                                id="opt2"
+                            />
+                            <label for="opt2" class="option">
+                                <img src={ua} alt="ua" />
+                            </label>
+                        </li>
+                        <li>
+                            <input
+                                value="ru"
+                                class="selectopt"
+                                name="test"
+                                type="radio"
+                                id="opt3"
+                            />
 
-                    {/* <div>
-                        <button onClick={() => changeLanguage('en')}>EN</button>
-                        <button onClick={() => changeLanguage('ua')}>UA</button>
-                    </div> */}
+                            <label for="opt3" class="option">
+                                <img src={ru} alt="en" />
+                            </label>
+                        </li>
+                    </ul>
                 </NavTop>
                 <NavItemBox onClick={showSidebar}>
                     <NavItem>
@@ -86,7 +122,7 @@ const RightNav = () => {
 
                     <NavItem>
                         <NavLink
-                            to={routes.tirParking}
+                            to={routes.aboutUs}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
                             {t('link.aboutUs')}
@@ -113,7 +149,7 @@ const RightNav = () => {
 
                     <NavItem>
                         <NavLink
-                            to={routes.aboutUs}
+                            to={routes.tirParking}
                             activeStyle={{ color: `${activeStyle}` }}
                         >
                             {t('link.tirParking')}

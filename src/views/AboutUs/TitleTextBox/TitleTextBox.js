@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Box } from './TitleTextBoxStyle';
+import { Box } from '../../HomePage/components/TitleTextBoxStyle';
 
 const TitleTextBox = () => {
     const { t } = useTranslation();
