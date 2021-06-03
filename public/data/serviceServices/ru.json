@@ -1,37 +1,37 @@
 [
     {
         "id": 0,
-        "title": "Selection of spare parts",
+        "title": "Подбор запчастей",
         "ico": "../../img/ServiceServices/document.png"
     },
 
     {
         "id": 1,
-        "title": "Engine maintenance",
+        "title": "Обслуживание двигателя",
         "ico": "../../img/ServiceServices/engine.png"
     },
 
     {
         "id": 2,
-        "title": "Chassis repair",
+        "title": "Ремонт ходовой",
         "ico": "../../img/ServiceServices/suspension.png"
     },
 
     {
         "id": 3,
-        "title": "Computer diagnostics",
+        "title": "Компьютерная диагностика",
         "ico": "../../img/ServiceServices/com-diagnostics.png"
     },
 
     {
         "id": 4,
-        "title": "Oil change",
+        "title": "Замена масла",
         "ico": "../../img/ServiceServices/gasoline.png"
     },
 
     {
         "id": 5,
-        "title": "Brake system maintenance",
+        "title": "Обслуживание тормозной сист.",
         "ico": "../../img/ServiceServices/brake-disc.png"
     }
 ]

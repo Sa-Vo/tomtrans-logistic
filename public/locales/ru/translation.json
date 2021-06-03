@@ -1,93 +1,93 @@
 {
     "link": {
-        "home": "Home",
-        "aboutUs": "About Us",
-        "carService": "Autoservice",
-        "hostel": "Hostel",
+        "home": "Главная",
+        "aboutUs": "О нас",
+        "carService": "Автосервис",
+        "hostel": "Хостел",
         "tirParking": "TIR Parking",
-        "contact": "Contacts"
+        "contact": "Контакты"
     },
 
     "btn": {
-        "submitStatement": "Form",
-        "submitForm": "Submit",
-        "submit": "Submit"
+        "submitStatement": "Додать заявку",
+        "submitForm": "Записаться",
+        "submit": "Отправить"
     },
 
     "titleSection": {
-        "carPark": "Our fleet",
-        "service": "Services",
-        "partners": "Our partners",
-        "location": "Where to find us"
+        "carPark": "Наш автопарк",
+        "service": "Услуги",
+        "partners": "Наши партнеры",
+        "location": "Где нас найти"
     },
 
     "titlePage": {
-        "home": "International transportation",
-        "carService": "Service your car",
+        "home": "Международные перевозки",
+        "carService": "Ремонт вашего автомобиля",
 
         "subTitleHome": {
-            "descrFisrt": "Need to deliver something somewhere?",
-            "descrSecond": "Fill form and we will help you"
+            "descrFisrt": "Нужно что-то куда-то перевезти?",
+            "descrSecond": "Подайте быструю заявку и мы поможем вам"
         },
 
         "subTitleCarService": {
-            "descr": "The best service for maintenance and repair of cars and trucks",
-            "location": "Avtoshlyakh T 2603, Ridkivtsi, Chernivtsi oblast",
-            "workTime": "Monday - Saturday from 8:00 to 21:00"
+            "descr": "Лучший сервис по обслуживанию и ремонту легковых и грузовиков",
+            "location": "Автодорога Т 2603, Редковцы, Черновицкая область",
+            "workTime": "Понедельник - суббота с 8:00 до 21:00"
         },
 
         "subTitleHostel": {
-            "descr": "NULL"
+            "descr": "У нас на территории находится прекрасно оборудованный для комфортной ночевки хостел, где водители могут с легкостью отдохнуть после длительной работы."
         },
 
         "subTitleTirParking": {
-            "descrFisrt": "NULL",
-            "descrSecond": "NULL"
+            "descrFisrt": "На территории нашего паркинга TIR для грузовых автомобилей предусмотрены условия для безопасного и комфортного парковки транспортных средств.",
+            "descrSecond": "Парковка для дальнобойщиков находится под наблюдением"
         }
     },
 
     "contacts": {
-        "phone": "Phone",
-        "adress": "Adress",
-        "adressInfo": "Avtoshlyakh T 2603",
-        "timeWork": "Work time",
-        "timeWorkInfo": "Mon-Sat 8.30 - 19.00",
-        "social": "Messengers"
+        "phone": "телефон",
+        "adress": "Адрес",
+        "adressInfo": "Автодорога Т 2603",
+        "timeWork": "Режим работы",
+        "timeWorkInfo": "Пн-Сб 8.30 - 19.00",
+        "social": "Мессенджеры"
     },
 
     "howWeWork": {
-        "title": "How we work",
-        "decrOne": "We value each client and provide quality service in Chernivtsi",
-        "decrTwo": "So here are a few points so you can easily find out how we work in order to take the car to our service.",
-        "btn": "Submit"
+        "title": "Как мы работаем",
+        "decrOne": "Мы ценим каждого клиента и предоставляем качественный сервис в Черновцах",
+        "decrTwo": "Поэтому вот несколько пунктов, чтобы вы могли легко узнать как мы работаем, для того чтобы сдать машину на ремонт в наш сервис.",
+        "btn": "Записаться"
     },
 
-    "ServiceServicesTitle": "Car Services",
+    "ServiceServicesTitle": "Услуги сервиса",
 
     "form": {
-        "title": "Quick form",
-        "fullName": "Full name",
-        "phone": "Phone",
+        "title": "Быстрая заявка",
+        "fullName": "ФИО",
+        "phone": "Телефон",
         "email": "E-mail",
-        "pointStart": "Shipping point",
-        "pointEnd": "Delivery point",
-        "goods": "Goods",
-        "describeProblem": "Describe the problem",
-        "car": "Car"
+        "pointStart": "Пункт Отправки",
+        "pointEnd": "Пункт Доставки",
+        "goods": "Товар",
+        "describeProblem": "Опишите проблему",
+        "car": "Машина"
     },
 
     "contactPage": {
-        "title": "Contact Us",
-        "maksym": "Maksym",
-        "vadim": "Vadim",
-        "ivan": "Ivan",
-        "sergii": "Sergii",
-        "lyudmyla": "Lyudmyla",
-        "logistics": "Logistics",
-        "accounting": "Accounting department",
-        "address": "Address",
-        "adressInfo": "Avtoshlyakh T 2603",
-        "workTime": "Work time",
-        "workTimeInfo": "Mon - Sat from 8:00 to 21:00"
+        "title": "Связь с нами",
+        "maksym": "Максим",
+        "vadim": "Вадим",
+        "ivan": "Иван",
+        "sergii": "Сергей",
+        "lyudmyla": "Людмила",
+        "logistics": "Логистика",
+        "accounting": "Бухгалтерия",
+        "address": "Aдреса",
+        "adressInfo": "Автодорога Т 2603",
+        "workTime": "Режим работы",
+        "workTimeInfo": "Пн-Сб 8:30 до 19:00"
     }
 }

@@ -2,21 +2,21 @@
     {
         "id": 0,
         "count": "50+",
-        "infoTop": "trucks",
-        "infoBottom": "in the fleet"
+        "infoTop": "машин",
+        "infoBottom": "в автопарке"
     },
 
     {
         "id": 1,
         "count": "21",
-        "infoTop": "tons",
-        "infoBottom": "capacity"
+        "infoTop": "тонн",
+        "infoBottom": "грузоподъемность"
     },
 
     {
         "id": 2,
         "count": "86",
         "infoTop": "m3",
-        "infoBottom": "trailer volume"
+        "infoBottom": "объем прицепа"
     }
 ]

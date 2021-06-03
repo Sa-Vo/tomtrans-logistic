@@ -2,28 +2,28 @@
     {
         "id": 0,
         "number": "01",
-        "title": "Enrollment",
-        "text": "We provide advice and determine the dates and times of repair of your car"
+        "title": "Запись",
+        "text": "Предоставляем консультацию и определяем дате и ремонте вашего автомобиля"
     },
 
     {
         "id": 1,
         "number": "02",
-        "title": "Service",
-        "text": "We perform repair, prevention, or diagnostics of the car"
+        "title": "Ремонт",
+        "text": "Выполняем ремонт, профилактику, или диагностику автомобиля"
     },
 
     {
         "id": 2,
         "number": "03",
-        "title": "Review",
-        "text": "The master reports the work, the client checks the car"
+        "title": "Проверка",
+        "text": "Мастер сообщает о работе, клиент проверяет автомобиль"
     },
 
     {
         "id": 3,
         "number": "04",
-        "title": "Payment",
-        "text": "After successful verification, the client pays for the service"
+        "title": "Оплата",
+        "text": "После успешной проверки клиент оплачивает услугу сервиса"
     }
 ]

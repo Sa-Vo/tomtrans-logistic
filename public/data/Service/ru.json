@@ -1,7 +1,7 @@
 [
     {
         "id": "0",
-        "title": "Logistic",
+        "title": "Логистика",
         "imgSmall": "../../img/Service/service-logistics-small.png",
         "imgLarge": "../../img/Service/service-logistics.png",
         "src": "/"
@@ -17,7 +17,7 @@
 
     {
         "id": "2",
-        "title": "Car Service",
+        "title": "Автосервис",
         "imgSmall": "../../img/Service/service-carservice-small.png",
         "imgLarge": "../../img/Service/service-carservice.png",
         "src": "/car-service"
@@ -25,7 +25,7 @@
 
     {
         "id": "3",
-        "title": "Hostel",
+        "title": "Хостел",
         "imgSmall": "../../img/Service/service-hostel-small.png",
         "imgLarge": "../../img/Service/service-hostel.png",
         "src": "/hostel"
