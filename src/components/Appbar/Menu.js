@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import routes from '../../routes';
+import SelectLang from '../SelectLang/SelectLang';
 
 import {
     Burger,
@@ -17,10 +18,9 @@ import {
     LogoBox,
     activeStyle,
 } from './MenuStyled';
+
 import imgLogoPath from '../../assets/Logo.png';
-import ua from '../../assets/ua.png';
-import en from '../../assets/en.png';
-import ru from '../../assets/ru.png';
+
 
 const RightNav = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -64,50 +64,8 @@ const RightNav = () => {
                         <option value="ua">UKR</option>
                         <option value="ru">RU</option>
                     </select> */}
-                    <ul
-                        class="select"
-                        tabindex="1"
-                        value={i18n.language}
-                        onChange={e => i18n.changeLanguage(e.target.value)}
-                    >
-                        <li>
-                            <input
-                                value="en"
-                                class="selectopt"
-                                name="test"
-                                type="radio"
-                                id="opt1"
-                            />
-                            <label for="opt1" class="option">
-                                <img src={en} alt="en" />
-                            </label>
-                        </li>
-                        <li>
-                            <input
-                                value="ua"
-                                class="selectopt"
-                                name="test"
-                                type="radio"
-                                id="opt2"
-                            />
-                            <label for="opt2" class="option">
-                                <img src={ua} alt="ua" />
-                            </label>
-                        </li>
-                        <li>
-                            <input
-                                value="ru"
-                                class="selectopt"
-                                name="test"
-                                type="radio"
-                                id="opt3"
-                            />
 
-                            <label for="opt3" class="option">
-                                <img src={ru} alt="en" />
-                            </label>
-                        </li>
-                    </ul>
+                    <SelectLang />
                 </NavTop>
                 <NavItemBox onClick={showSidebar}>
                     <NavItem>
