@@ -1,6 +1,6 @@
 {
     "link": {
-        "home": "Home",
+        "home": "Main page",
         "aboutUs": "About Us",
         "carService": "Autoservice",
         "hostel": "Hostel",
@@ -17,17 +17,17 @@
     "titleSection": {
         "carPark": "Our fleet",
         "service": "Services",
-        "partners": "Our partners",
-        "location": "Where to find us"
+        "partners": "Our Partners",
+        "location": "Contacts"
     },
 
     "titlePage": {
-        "home": "International transportation",
-        "carService": "Service your car",
+        "home": "International Transportation",
+        "carService": "Car Service",
 
         "subTitleHome": {
-            "descrFisrt": "Need to deliver something somewhere?",
-            "descrSecond": "Fill form and we will help you"
+            "descrFisrt": "We are welcomed to deliver your products!",
+            "descrSecond": "Fill the form in and we will help you"
         },
 
         "subTitleCarService": {
@@ -48,7 +48,7 @@
 
     "contacts": {
         "phone": "Phone",
-        "adress": "Adress",
+        "adress": "Address",
         "adressInfo": "Avtoshlyakh T 2603",
         "timeWork": "Work time",
         "timeWorkInfo": "Mon-Sat 8.30 - 19.00",
