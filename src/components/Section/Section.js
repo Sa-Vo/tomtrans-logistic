@@ -16,11 +16,8 @@ export const Section = styled.section`
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: ${palette.H_2};
         text-align: center;
-        @media ${palette.device.tablet} {
-            font-size: ${palette.H_2};
-        }
     }
 `;
 
