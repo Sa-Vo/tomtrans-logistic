@@ -41,6 +41,15 @@ const Contact = () => {
                                         {t('contactPage.logistics')}
                                     </InfoTitle>
                                     <PhoneBox>
+                                    <PhoneItem>
+                                            <Phone href="tel:+380503380552">
+                                                +38(050)338-05-52
+                                            </Phone>
+                                            <Name>
+                                                {t('contactPage.grigory')}
+                                            </Name>
+                                        </PhoneItem>
+
                                         <PhoneItem>
                                             <Phone href="tel:+380999736823">
                                                 +38(099)973-68-23
