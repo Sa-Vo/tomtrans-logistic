@@ -81,11 +81,16 @@ export const Info = styled.div`
     @media (min-width: 320px) and (max-width: 1023px) {
         border-radius: 2rem;
     }
+
     @media ${palette.device.laptop} {
         padding: 5rem 0;
-        width: 40%;
+        width: 58%;
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
+    }
+
+    @media ${palette.device.laptopL} {
+        width: 40%;
     }
 `;
 
@@ -98,10 +103,12 @@ export const InfoItem = styled.article`
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     box-shadow: 9.057px 7.873px 30.4px 1.6px rgba(0, 0, 0, 0.24);
+
     @media ${palette.device.laptop} {
         margin: 1rem 2rem;
-        max-width: 40rem;
+        max-width: 45rem;
     }
+
     @media ${palette.device.laptopL} {
         margin: 0 auto;
         margin-bottom: 1rem;
@@ -125,12 +132,16 @@ export const InfoTitle = styled.p`
 
 export const PhoneBox = styled.ul`
     padding: 0;
-    margin: 0 3rem;
     list-style: none;
     font-size: 1.5rem;
 
+    @media ${palette.device.mobileM} {
+        margin: 0 1.9rem;
+    }
+
     @media ${palette.device.tablet} {
         font-size: 2rem;
+        margin: 0 3rem;
     }
 `;
 
