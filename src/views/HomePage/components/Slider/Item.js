@@ -27,7 +27,7 @@ function Item({
         <>
             <Card>
                 <SLiderImgBox>
-                    <img src={image} alt="" />
+                    <img src={image} alt={title} />
                 </SLiderImgBox>
 
                 <SliderInfoBox>

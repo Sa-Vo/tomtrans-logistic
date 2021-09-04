@@ -58,22 +58,22 @@ export default function SliderPartners() {
         <SliderBox>
             <Slider {...settings}>
                 <SliderItem>
-                    <img src={LogoAuchan} alt="" />
+                    <img src={LogoAuchan} alt="Logo Auchan" />
                 </SliderItem>
                 <SliderItem>
-                    <img src={LogoEpic} alt="" />
+                    <img src={LogoEpic} alt="Logo Epic" />
                 </SliderItem>
                 <SliderItem>
-                    <img src={LogoFozzy} alt="" />
+                    <img src={LogoFozzy} alt="Logo Fozzy" />
                 </SliderItem>
                 <SliderItem>
-                    <img src={LogoMetro} alt="" />
+                    <img src={LogoMetro} alt="Logo Metro" />
                 </SliderItem>
                 <SliderItem>
-                    <img src={LogoSilpo} alt="" />
+                    <img src={LogoSilpo} alt="Logo Silpo" />
                 </SliderItem>
                 <SliderItem>
-                    <img src={LogoAmic} alt="" />
+                    <img src={LogoAmic} alt="Logo Amic" />
                 </SliderItem>
             </Slider>
         </SliderBox>
