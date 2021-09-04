@@ -21,7 +21,7 @@ const ServiceServices = () => {
                 {items.map(item => (
                     <ServicesItem key={item.id}>
                         <div>
-                            <img src={item.ico} alt="" />
+                            <img src={item.ico} alt={item.title} />
                         </div>
                         <h3>{item.title}</h3>
                     </ServicesItem>
