@@ -17,7 +17,6 @@ import {
 } from './ContactStyled';
 
 const Contact = () => {
-    
     useEffect(() => {
         window.scrollTo(0, 0);
     });
@@ -41,7 +40,7 @@ const Contact = () => {
                                         {t('contactPage.logistics')}
                                     </InfoTitle>
                                     <PhoneBox>
-                                    <PhoneItem>
+                                        <PhoneItem>
                                             <Phone href="tel:+380503380552">
                                                 +38(050)338-05-52
                                             </Phone>
@@ -89,8 +88,8 @@ const Contact = () => {
                                         </Text>
 
                                         <PhoneItem>
-                                            <Phone href="tel:+380505010544">
-                                                +38(050)501-05-44
+                                            <Phone href="tel:+380505105444">
+                                                +38(050)510-54-44
                                             </Phone>
                                             <Name>
                                                 {t('contactPage.lyudmyla')}
