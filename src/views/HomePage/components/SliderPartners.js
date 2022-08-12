@@ -66,9 +66,9 @@ export default function SliderPartners() {
                 <SliderItem>
                     <img src={LogoFozzy} alt="Logo Fozzy" />
                 </SliderItem>
-                <SliderItem>
+                {/* <SliderItem>
                     <img src={LogoMetro} alt="Logo Metro" />
-                </SliderItem>
+                </SliderItem> */}
                 <SliderItem>
                     <img src={LogoSilpo} alt="Logo Silpo" />
                 </SliderItem>

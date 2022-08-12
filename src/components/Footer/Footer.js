@@ -5,7 +5,7 @@ const Footer = () => (
     <footer style={{ background: '#414141' }}>
         <Wrapper>
             <p style={{ padding: '5px 0', color: 'white', textAlign: 'center' }}>
-                © 2021 Tomtrans Logistic
+                © 2022 Tomtrans Logistic
             </p>
         </Wrapper>
     </footer>
