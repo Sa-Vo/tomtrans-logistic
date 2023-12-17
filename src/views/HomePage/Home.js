@@ -43,16 +43,14 @@ const data = [
     },
 ];
 
-const VideoWrapp = styled.div`
-    video {
-        position: absolute;
-        top: 49%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        transform: translate(-50%, -50%);
-        z-index: 0;
-    }
+const VideoWrapp = styled.video`
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 `;
 
 const LoadingImageVideo = styled.img`
@@ -94,17 +92,16 @@ const Home = () => {
                             className="loading-image"
                         />
                     )}
-                    <VideoWrapp>
-                        <video
-                            onLoadedMetadata={handleLoadedMetadata}
-                            autoPlay
-                            loop
-                            muted
-                            style={{ width: '100%', height: '100%' }}
-                        >
-                            <source src={DemoVideo} type="video/mp4" />
-                            Ваш браузер не підтримує відео тег.
-                        </video>
+
+                    <VideoWrapp
+                        onLoadedMetadata={handleLoadedMetadata}
+                        autoPlay
+                        loop
+                        muted
+                        style={{ width: '100%' }}
+                    >
+                        <source src={DemoVideo} type="video/mp4" />
+                        Ваш браузер не підтримує відео тег.
                     </VideoWrapp>
                 </HomeSlide>
                 <WrapperBox>

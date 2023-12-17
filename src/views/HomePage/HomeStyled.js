@@ -10,5 +10,6 @@ export const HomePage = styled.main`
 
 export const HomeSlide = styled.section`
     ${MainImgPage}
+    height: 115vh;
     /* background-image: url(${imgHome}); */
 `;
