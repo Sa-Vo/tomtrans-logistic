@@ -72,18 +72,6 @@ const RightNav = () => {
                     >
                         <li>
                             <input
-                                value="en"
-                                class="selectopt"
-                                name="test"
-                                type="radio"
-                                id="opt1"
-                            />
-                            <label for="opt1" class="option">
-                                <img src={en} alt="en" />
-                            </label>
-                        </li>
-                        <li>
-                            <input
                                 value="ua"
                                 class="selectopt"
                                 name="test"
@@ -105,6 +93,18 @@ const RightNav = () => {
 
                             <label for="opt3" class="option">
                                 <img src={ru} alt="en" />
+                            </label>
+                        </li>
+                        <li>
+                            <input
+                                value="en"
+                                class="selectopt"
+                                name="test"
+                                type="radio"
+                                id="opt1"
+                            />
+                            <label for="opt1" class="option">
+                                <img src={en} alt="en" />
                             </label>
                         </li>
                     </ul>

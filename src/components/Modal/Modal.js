@@ -16,7 +16,9 @@ const Modal = () => {
     return (
         <>
             <ModalBox>
-                <ButtonModal onClick={openModal}>{t('btn.submitStatement')}</ButtonModal>
+                <ButtonModal onClick={openModal} style={{ zIndex: 1 }}>
+                    {t('btn.submitStatement')}
+                </ButtonModal>
 
                 <ModalContent
                     showModal={showModal}

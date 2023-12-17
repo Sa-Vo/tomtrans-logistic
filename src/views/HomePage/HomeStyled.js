@@ -10,5 +10,5 @@ export const HomePage = styled.main`
 
 export const HomeSlide = styled.section`
     ${MainImgPage}
-    background-image: url(${imgHome});
+    /* background-image: url(${imgHome}); */
 `;

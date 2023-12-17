@@ -18,12 +18,24 @@ import {
 import Modal from './components/ModalService/ModalService';
 import Location from './components/Location/Location';
 import FormService from './components/FormService/FormService';
+import Gallery from '../HomePage/components/Gallery/Gallery';
+
+import Slide1 from '../../assets/gallery/auto-slider-1.jpg';
+import Slide2 from '../../assets/gallery/auto-slider-2.jpg';
+const data = [
+    {
+        img: Slide2,
+    },
+    {
+        img: Slide1,
+    },
+];
 
 export default class CarService extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
     }
-    
+
     render() {
         return (
             <>
@@ -48,6 +60,10 @@ export default class CarService extends Component {
                     <Wrapper>
                         <ServiceServices />
                     </Wrapper>
+
+                    <SectionLong darkTheme>
+                        <Gallery data={data} />
+                    </SectionLong>
 
                     <FormBox darkTheme>
                         <Element name="formProblem">
