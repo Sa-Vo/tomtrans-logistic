@@ -2,12 +2,12 @@
 import React from 'react';
 
 import Wrapper from '../Section/Wrapper';
-let date = new Date().getFullYear();
+const date = new Date().getFullYear();
 const Footer = () => (
     <footer style={{ background: '#414141' }}>
         <Wrapper>
             <p style={{ padding: '5px 0', color: 'white', textAlign: 'center' }}>
-                © {date} Tomtrans Logistic
+                {date} ©  Tomtrans Logistic
             </p>
         </Wrapper>
     </footer>
