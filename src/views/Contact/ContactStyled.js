@@ -4,7 +4,7 @@ import ContactBg from '../../assets/ContactBg.png';
 
 export const ContactPage = styled.main`
     @media ${palette.device.laptop} {
-        height: 100vh;
+        height: 120vh;
     }
 
     section {
@@ -16,7 +16,7 @@ export const ContactPage = styled.main`
         height: 125rem;
 
         @media ${palette.device.laptop} {
-            height: 100vh;
+            height: 120vh;
         }
 
         @media ${palette.device.laptopL} {
