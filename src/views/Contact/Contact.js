@@ -59,29 +59,14 @@ const Contact = () => {
                                         </PhoneItem>
 
                                         <PhoneItem>
-                                            <Phone href="tel:+380997274533">
-                                                +38(099)727-45-33
+                                            <Phone href="tel:+380637637570">
+                                                +38(063)763-75-70
                                             </Phone>
                                             <Name>
                                                 {t('contactPage.vadim')}
                                             </Name>
                                         </PhoneItem>
 
-                                        <PhoneItem>
-                                            <Phone href="tel:+380956959555">
-                                                +38(095)695-95-55
-                                            </Phone>
-                                            <Name>{t('contactPage.ivan')}</Name>
-                                        </PhoneItem>
-
-                                        <PhoneItem>
-                                            <Phone href="tel:+380509599461">
-                                                +38(050)959-94-61
-                                            </Phone>
-                                            <Name>
-                                                {t('contactPage.sergii')}
-                                            </Name>
-                                        </PhoneItem>
 
                                         <Text>
                                             {t('contactPage.accounting')}
@@ -95,6 +80,37 @@ const Contact = () => {
                                                 {t('contactPage.lyudmyla')}
                                             </Name>
                                         </PhoneItem>
+                                        
+                                        <PhoneItem>
+                                            <Phone href="tel:+380667400158">
+                                                +38(066)740-01-58
+                                            </Phone>
+                                            <Name>
+                                                {t('contactPage.orusya')}
+                                            </Name>
+                                        </PhoneItem>
+
+                                        <Text>
+                                            {t('contactPage.service')}
+                                        </Text>
+
+                                        <PhoneItem>
+                                            <Phone href="tel:+38095 10 27 988">
+                                                +38(095)102-79-88
+                                            </Phone>
+                                            <Name>
+                                                {t('contactPage.valentin')}
+                                            </Name>
+                                        </PhoneItem>
+<PhoneItem>
+                                            <Phone href="tel:+380987987224 ">
+                                            +38(098)798-72-24 
+                                            </Phone>
+                                            <Name>
+                                                {t('contactPage.sanya')}
+                                            </Name>
+                                        </PhoneItem>
+
                                     </PhoneBox>
                                 </InfoItem>
 
