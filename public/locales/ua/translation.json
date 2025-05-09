@@ -18,7 +18,7 @@
         "carPark": "Наш автопарк",
         "service": "Послуги",
         "partners": "Наші партнери",
-        "gallery": "Галарея",
+        "gallery": "Галерея",
         "location": "Де нас знайти"
     },
 
@@ -81,12 +81,17 @@
         "title": "Зв'язок з нами",
         "grigory": "Григорiй",
         "maksym": "Максим",
-        "vadim": "Вадим",
+        "vadim": "Вікторія",
+        "orusya": "Орися",
         "ivan": "Іван",
         "sergii": "Сергій",
         "lyudmyla": "Людмила",
+        "valentin": "Валентин",
+        "sanya": "Олександр",
+        
         "logistics": "Логістика",
         "accounting": "Бухгалтерія",
+        "service": "Сервіс і запчачстини",
         "address": "Aдреса",
         "addressInfo": "Автошлях Т 2603",
         "workTime": "Режим роботи",
