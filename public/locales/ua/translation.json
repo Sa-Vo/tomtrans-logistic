@@ -23,12 +23,12 @@
     },
 
     "titlePage": {
-        "home": "Міжнародні перевезення",
+        "home": "Tomtrans Logistic",
         "carService": "Ремонт вашого автомобіля",
 
         "subTitleHome": {
-            "descrFisrt": "Потрібно щось кудись перевезти?",
-            "descrSecond": "Подайте швидку заявку і ми допоможем вам"
+            "descrFisrt": "Міжнародні перевезення",
+            "descrSecond": "Транспортні та експедиційні послуги"
         },
 
         "subTitleCarService": {

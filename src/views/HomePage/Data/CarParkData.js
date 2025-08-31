@@ -1,7 +1,7 @@
 const CarParkData = [
     {
         id: 0,
-        count: '50+',
+        count: '40+',
         infoTop: 'машин',
         infoBottom: 'в автопарку',
     },
