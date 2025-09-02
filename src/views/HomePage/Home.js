@@ -21,7 +21,8 @@ import Slide3 from '../../assets/gallery/slider-3.jpg';
 import Slide4 from '../../assets/gallery/slider-4.jpg';
 import Slide5 from '../../assets/gallery/slider-5.jpg';
 import Slide6 from '../../assets/gallery/slider-6.jpg';
-
+import Slide7 from '../../assets/gallery/auto-slider-2.jpg';
+import Slide8 from '../../assets/gallery/auto-slider-1.jpg';
 const data = [
     {
         img: Slide6,
@@ -40,6 +41,10 @@ const data = [
     },
     {
         img: Slide5,
+    }, {
+        img: Slide7,
+    }, {
+        img: Slide8,
     },
 ];
 
@@ -121,6 +126,7 @@ const Home = () => {
                     <SliderPartners />
                 </SectionLong>
                 <SectionLong>
+                <h2>{t('titleSection.gallery')}</h2>
                     <Gallery data={data} />
                 </SectionLong>
                 <Section>
