@@ -25,14 +25,14 @@ export const Box = styled.article`
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         background-color: rgba(0, 0, 0, 0.4);
 
         @media ${palette.device.mobileM} {
             width: 32rem;
         }
         @media ${palette.device.mobileM} {
-            width: 32rem;
+            width: fit-content;
         }
     }
 
@@ -46,10 +46,12 @@ export const Box = styled.article`
         width: 45rem;
         h1 {
             font-size: 5rem;
+            padding: 1.5rem
         }
 
         p {
             font-size: 3rem;
+            padding: 1rem
         }
     }
 `;

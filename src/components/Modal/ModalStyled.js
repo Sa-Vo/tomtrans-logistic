@@ -13,10 +13,11 @@ export const ModalBox = styled.div`
 `;
 
 export const ButtonModal = styled.button`
-    font-size: 2rem;
+    font-size: 2.5rem;
     ${Button}
     position: absolute;
     min-width: 16.7rem;
+
     top: 75%;
     background-color: rgba(21, 21, 21, 0.8);
 

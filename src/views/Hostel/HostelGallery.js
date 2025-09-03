@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const CarouselWrapp = styled.div`
     padding-top: 3rem;
+    padding-bottom: 35px;
 `;
 
 const Gallery = props => {
@@ -12,6 +13,7 @@ const Gallery = props => {
 
     return (
         <>
+            <h2>{t('titleSection.gallery')}</h2>
             <CarouselWrapp>
                 <Carousel autoplay>
                     {props.data.map(el => {

@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import LogoAuchan from '../../../assets/LogoPartners/Auchan.png';
 import LogoEpic from '../../../assets/LogoPartners/Epic.png';
 import LogoFozzy from '../../../assets/LogoPartners/Fozzy.png';
-import LogoMetro from '../../../assets/LogoPartners/Metro.png';
+import LogoRoshen from '../../../assets/LogoPartners/Roshen.png';
+import LogoImperoFoods from '../../../assets/LogoPartners/ImperoFoods.png';
 import LogoSilpo from '../../../assets/LogoPartners/Silpo.png';
 import LogoAmic from '../../../assets/LogoPartners/Amic.png';
 
@@ -66,9 +67,12 @@ export default function SliderPartners() {
                 <SliderItem>
                     <img src={LogoFozzy} alt="Logo Fozzy" />
                 </SliderItem>
-                {/* <SliderItem>
-                    <img src={LogoMetro} alt="Logo Metro" />
-                </SliderItem> */}
+                <SliderItem>
+                    <img src={LogoRoshen} alt="Logo Roshen" />
+                </SliderItem>
+                <SliderItem>
+                    <img src={LogoImperoFoods} alt="Logo Imperovo Foods" />
+                </SliderItem>
                 <SliderItem>
                     <img src={LogoSilpo} alt="Logo Silpo" />
                 </SliderItem>

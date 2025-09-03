@@ -4,8 +4,10 @@ import Navigation from './Navigation';
 import { Wrapper } from '../../utils/VariablesStyled';
 
 const Header = styled.header`
+    background-color: rgba(0, 0, 0, 0.4);
+    height: fit-content;
     position: fixed;
-    height: 13vh;
+    // height: 13vh;
     top: 0;
     left: 0;
     bottom: 0;
