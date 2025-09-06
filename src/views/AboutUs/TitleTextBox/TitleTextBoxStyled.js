@@ -1,0 +1,97 @@
+import styled from 'styled-components';
+import * as palette from '../../../utils/VariablesStyled';
+
+export const Box = styled.article`
+    @media ${palette.device.tablet} {
+        flex-direction: row;
+    }
+    flex-direction: column;
+    margin-inline: 10rem;
+    padding-top: 18rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(31, 30, 34);
+
+    div {
+        max-width: 130rem;
+        background-color: rgba(150, 150, 150, 0.3);
+    }
+
+    h1 {
+        font-size: 3rem;
+
+        @media ${palette.device.mobileM} {
+            width: fit-content;
+        }
+    }
+    h3 {
+        font-size: 4rem;
+    }
+
+    p {
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+`;
+
+export const TextBox = styled.div`
+    &.left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 10rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 3.1rem;
+
+        margin: 30px 0;
+        color: rgb(39, 122, 53);
+    }
+
+    p {
+        font-size: 2.4rem;
+    }
+`;
+export const ImageBox = styled.div`
+    img {
+        @media (max-width: 1748px) {
+            width: 10rem;
+        }
+        @media ${palette.device.tablet} {
+            display: block;
+        }
+        display: none;
+        margin: 4rem 0;
+        width: 20rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 5rem;
+`;
+export const BigBox = styled.div`
+    background: transparent !important;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @media ${palette.device.tablet} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+`;
+export const LilBox = styled.div`
+    background: transparent !important;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    span {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+`;

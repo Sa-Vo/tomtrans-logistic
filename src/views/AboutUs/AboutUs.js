@@ -19,9 +19,9 @@ const AboutUs = () => {
             </Helmet>
 
             <AboutUsPage>
-                <AboutUsSlide>
+                {/* <AboutUsSlide> */}
                     <TitleTextBox />
-                </AboutUsSlide>
+                {/* </AboutUsSlide> */}
                 <CoverageMap/>
                 <Team/>
                 {/* <Awards /> */}

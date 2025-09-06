@@ -131,6 +131,14 @@
             "name":"Serhii",
             "role":"Chief mechanic"
         },
-        "CoverageMapTitle":"Map of coverage of key routes"
+        "CoverageMapTitle":"Map of coverage of key routes",
+        "AboutUsTitle": "About us",
+        "AboutUsSubTitle":"Our mission is to make logistics simple, transparent and efficient for each client",
+        "AboutUsMainTextPt1":"TomtransLogistic LLC is a modern logistics company with its own fleet of vehicles and services that provides reliable and timely transportation for businesses of all sizes. For more than 30 years, the company has been providing freight forwarding services for the transportation of goods by trucks both in international traffic and in Ukraine.",
+        "AboutUsMainTextPt2":"The company has its own fleet of more than 40 vehicles, its own car service and spare parts for full technical control of transport. A team of logistics and transportation professionals accompanies clients from planning to delivery, ensuring reliable and timely transportation.",
+        "YoS":"Years of Service",
+        "ToR":"Trucks on road",
+        "RC":"Regular Customers",
+        "D/M":"Deliveries/month"
     }
 }

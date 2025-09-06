@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import * as palette from '../../../utils/VariablesStyled';
 
 export const MapSection = styled.section`
+    @media ${palette.device.mobileS} {
+        font-size: 2rem;
+        text-align: center;
+    }
     font-size: 3rem;
 
     margin-top: 5rem;
@@ -13,6 +17,9 @@ export const MapSection = styled.section`
     background-color: white;
 `;
 export const MapBox = styled.section`
+    @media ${palette.device.mobileS} {
+        width: 85vw;
+    }
     padding: 3rem;
     width: 150rem;
 `;

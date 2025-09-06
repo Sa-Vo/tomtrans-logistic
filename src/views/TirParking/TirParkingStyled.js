@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import * as palette from '../../utils/VariablesStyled';
-import TirParkingBg from '../../assets/TIRParkingBg.png';
+import TirParkingBg from '../../assets/gallery/slider-6.jpg';
 
 export const TirParkingPage = styled.main`
     @media ${palette.device.laptop} {
