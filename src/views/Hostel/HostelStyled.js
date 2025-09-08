@@ -3,19 +3,13 @@ import * as palette from '../../utils/VariablesStyled';
 
 export const HostelPage = styled.main`
     @media ${palette.device.laptop} {
-        height: 100vh;
+        height: 1200px;
     }
-
+    @media ${palette.device.mobileS} {
+        height: 950px;
+    }
      {
         background-color: rgb(53, 53, 53);
     }
-    section {
-
-        @media ${palette.device.laptop} {
-        }
-
-        @media ${palette.device.laptopL} {
-            padding: 0;
-        }
-    }
+   
 `;
