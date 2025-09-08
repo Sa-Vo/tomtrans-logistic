@@ -37,9 +37,7 @@ const Hostel = props => {
             <HostelPage>
             <CarouselWrapp>
             <Gallery data={data}/>
-            <section>
                     <TitleTextBox />
-                </section>
             </CarouselWrapp>
                
             </HostelPage>

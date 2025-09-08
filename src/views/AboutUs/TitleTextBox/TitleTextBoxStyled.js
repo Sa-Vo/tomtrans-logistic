@@ -5,6 +5,14 @@ export const Box = styled.article`
     @media ${palette.device.tablet} {
         flex-direction: row;
     }
+    @media ${palette.device.mobileS} {
+        margin-inline: 3rem;
+        padding-top: 6rem;
+    }
+    @media ${palette.device.tablet} {
+        padding-top: 18rem;
+        margin-inline: 10rem;
+    }
     flex-direction: column;
     margin-inline: 10rem;
     padding-top: 18rem;
@@ -36,6 +44,12 @@ export const Box = styled.article`
 
 export const TextBox = styled.div`
     &.left {
+        @media ${palette.device.mobileS} {
+            padding-inline: 1rem;
+        }
+        @media ${palette.device.laptop} {
+            padding: 5rem 10rem;
+        }
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,7 +66,14 @@ export const TextBox = styled.div`
     }
 
     p {
-        font-size: 2.4rem;
+        @media ${palette.device.mobileS} {
+            font-size: 2rem;
+        }
+        @media ${palette.device.laptop} {
+           font-size: 2.4rem;
+        }
+        text-align: justify;
+       
     }
 `;
 export const ImageBox = styled.div`
