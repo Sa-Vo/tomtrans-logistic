@@ -15,7 +15,8 @@ const Header = styled.header`
     z-index: 2;
 
     @media (max-width: 768px) {
-        background-color: rgba(255, 255, 255, 0.8);
+        padding-block:1.5rem;
+        background-color: rgba(5, 5, 5, 0.8);
     }
 
     @media (min-width: 769px) {

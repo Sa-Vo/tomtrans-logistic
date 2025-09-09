@@ -1,27 +1,18 @@
 import styled from 'styled-components';
 import * as palette from '../../../utils/VariablesStyled';
 
-export const Box = styled.article`
+export const Box = styled.div`
     @media ${palette.device.tablet} {
         flex-direction: row;
     }
-    @media ${palette.device.mobileS} {
-        margin-inline: 3rem;
-        padding-top: 6rem;
-    }
-    @media ${palette.device.tablet} {
-        padding-top: 18rem;
-        margin-inline: 10rem;
-    }
+
     flex-direction: column;
-    margin-inline: 10rem;
-    padding-top: 18rem;
     display: flex;
     justify-content: center;
     color: rgb(31, 30, 34);
 
     div {
-        max-width: 130rem;
+        // max-width: 130rem;
         background-color: rgba(150, 150, 150, 0.3);
     }
 
@@ -43,6 +34,14 @@ export const Box = styled.article`
 `;
 
 export const TextBox = styled.div`
+
+
+    @media ${palette.device.tablet} {
+        width: 100%;
+    }
+    @media ${palette.device.mobileS} {
+        padding-inline: 1rem;
+    }
     &.left {
         @media ${palette.device.mobileS} {
             padding-inline: 1rem;
@@ -54,6 +53,13 @@ export const TextBox = styled.div`
         flex-direction: column;
         justify-content: center;
         padding: 5rem 10rem;
+    }
+    &.bottom{
+        padding-bottom: 2rem;
+        @media ${palette.device.tablet} {
+          padding-inline: 6.5rem;
+        }
+      
     }
     h1 {
         font-size: 2.5rem;
@@ -67,13 +73,12 @@ export const TextBox = styled.div`
 
     p {
         @media ${palette.device.mobileS} {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         @media ${palette.device.laptop} {
-           font-size: 2.4rem;
+            font-size: 2.4rem;
         }
         text-align: justify;
-       
     }
 `;
 export const ImageBox = styled.div`
@@ -110,9 +115,28 @@ export const LilBox = styled.div`
     flex-direction: column;
     align-items: center;
     span {
-        font-size: 5rem;
+        font-size: 3rem;
+        @media ${palette.device.tablet}{
+            font-size: 5rem;
+        }
     }
     p {
         font-size: 1.5rem;
+    }
+`;
+
+export const ContaierBox = styled.article`
+    display: flex;
+    flex-direction: column;
+    max-width: 1720px;
+    margin: 0 auto;
+    margin-inline: 10rem;
+    @media ${palette.device.mobileS} {
+        margin-inline: 3rem;
+        padding-top: 6rem;
+    }
+    @media ${palette.device.tablet} {
+        padding-top: 22rem;
+        margin-inline: 10rem;
     }
 `;
