@@ -139,6 +139,14 @@
         "YoS":"Years of Service",
         "ToR":"Trucks on road",
         "RC":"Regular Customers",
-        "D/M":"Deliveries/month"
+        "D/M":"Deliveries/month",
+        "KeyAdvantages":"Key Advantages",
+        "Adv1":"🚛Own fleet of more than 40 modern trucks.",
+        "Adv2":"🔧Service center - technical control without downtime.",
+        "Adv3":"⏱Timely delivery - guarantee of meeting deadlines",
+        "Adv4":"🌍Wide geography - transportation across Ukraine, Europe and Asia.",
+        "Adv5":"📡Technologies - GPS monitoring and online tracking.",
+        "Adv6":"🤝Reliable partner - many years of experience and reputation.",
+        "Adv7":"💲Flexible tariffs - optimal solutions for different businesses."
     }
 }
