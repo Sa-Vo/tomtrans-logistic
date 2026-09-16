@@ -81,13 +81,13 @@
         "title": "Contact Us",
         "grigory": "Gregory",
         "maksym": "Maksym",
-        "vadim": "Victoria",
+        "vadim": "Stepan",
         "orusya": "Orysia",
         "ivan": "Ivan",
-        "sergii": "Sergii",
+        "sergii": "Serhii",
         "lyudmyla": "Lyudmyla",
         "valentin": "Valentin",
-        "sanya": "Oleksandr",
+        "sanya": "Sergiy",
         "logistics": "Logistics",
         "accounting": "Accounting department",
         "service": "Service and spareparts",
@@ -97,56 +97,56 @@
         "workTimeInfo": "Mon - Sat from 8:00 to 21:00"
     },
 
-    "aboutUsPage":{
-        "ourTeamTitle":"Our Team",
+    "aboutUsPage": {
+        "ourTeamTitle": "Our Team",
         "ceo": {
             "name": "Maksym",
             "role": "CEO"
         },
-        "chef":{
-            "name":"Hryhoriy",
-            "role":"CEO"
+        "chef": {
+            "name": "Hryhoriy",
+            "role": "CEO"
         },
-        "law":{
-            "name":"Valentyn",
-            "role":"Lawyer"
+        "law": {
+            "name": "Valentyn",
+            "role": "Lawyer"
         },
-        "acc":{
-            "name":"Liudmyla",
-            "role":"Accountant"
+        "acc": {
+            "name": "Liudmyla",
+            "role": "Accountant"
         },
-        "acc2":{
-            "name":"Orisya",
-            "role":"Accountant"
+        "acc2": {
+            "name": "Orisya",
+            "role": "Accountant"
         },
-        "manager-logist":{
-            "name":"Victoria",
-            "role":"Manager-Logistician"
+        "manager-logist": {
+            "name": "Serhii",
+            "role": "Manager-Logistician"
         },
-        "service":{
-            "name":"Oleskandr",
-            "role":"Service and spare parts"
+        "service": {
+            "name": "Oleskandr",
+            "role": "Service and spare parts"
         },
-        "mech":{
-            "name":"Serhii",
-            "role":"Chief mechanic"
+        "mech": {
+            "name": "Serhii",
+            "role": "Chief mechanic"
         },
-        "CoverageMapTitle":"Map of coverage of key routes",
+        "CoverageMapTitle": "Map of coverage of key routes",
         "AboutUsTitle": "About us",
-        "AboutUsSubTitle":"Our mission is to make logistics simple, transparent and efficient for each client",
-        "AboutUsMainTextPt1":"TomtransLogistic LLC is a modern logistics company with its own fleet of vehicles and services that provides reliable and timely transportation for businesses of all sizes. For more than 30 years, the company has been providing freight forwarding services for the transportation of goods by trucks both in international traffic and in Ukraine.",
-        "AboutUsMainTextPt2":"The company has its own fleet of more than 40 vehicles, its own car service and spare parts for full technical control of transport. A team of logistics and transportation professionals accompanies clients from planning to delivery, ensuring reliable and timely transportation.",
-        "YoS":"Years of Service",
-        "ToR":"Trucks on road",
-        "RC":"Regular Customers",
-        "D/M":"Deliveries/month",
-        "KeyAdvantages":"Key Advantages",
-        "Adv1":"🚛Own fleet of more than 40 modern trucks.",
-        "Adv2":"🔧Service center - technical control without downtime.",
-        "Adv3":"⏱Timely delivery - guarantee of meeting deadlines",
-        "Adv4":"🌍Wide geography - transportation across Ukraine, Europe and Asia.",
-        "Adv5":"📡Technologies - GPS monitoring and online tracking.",
-        "Adv6":"🤝Reliable partner - many years of experience and reputation.",
-        "Adv7":"💲Flexible tariffs - optimal solutions for different businesses."
+        "AboutUsSubTitle": "Our mission is to make logistics simple, transparent and efficient for each client",
+        "AboutUsMainTextPt1": "TomtransLogistic LLC is a modern logistics company with its own fleet of vehicles and services that provides reliable and timely transportation for businesses of all sizes. For more than 30 years, the company has been providing freight forwarding services for the transportation of goods by trucks both in international traffic and in Ukraine.",
+        "AboutUsMainTextPt2": "The company has its own fleet of more than 40 vehicles, its own car service and spare parts for full technical control of transport. A team of logistics and transportation professionals accompanies clients from planning to delivery, ensuring reliable and timely transportation.",
+        "YoS": "Years of Service",
+        "ToR": "Trucks on road",
+        "RC": "Regular Customers",
+        "D/M": "Deliveries/month",
+        "KeyAdvantages": "Key Advantages",
+        "Adv1": "🚛Own fleet of more than 40 modern trucks.",
+        "Adv2": "🔧Service center - technical control without downtime.",
+        "Adv3": "⏱Timely delivery - guarantee of meeting deadlines",
+        "Adv4": "🌍Wide geography - transportation across Ukraine, Europe and Asia.",
+        "Adv5": "📡Technologies - GPS monitoring and online tracking.",
+        "Adv6": "🤝Reliable partner - many years of experience and reputation.",
+        "Adv7": "💲Flexible tariffs - optimal solutions for different businesses."
     }
 }

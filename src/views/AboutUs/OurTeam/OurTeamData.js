@@ -6,7 +6,7 @@ import Director from '../../../../src/assets/OurTeam/director.jpg';
 import Lawyer from '../../../../src/assets/OurTeam/law.jpg';
 import ManagerLogistic from '../../../../src/assets/OurTeam/manager-logist.jpg';
 import Mechanic from '../../../../src/assets/OurTeam/mechanic.jpg';
-import Service from '../../../../src/assets/OurTeam/service.jpg';
+// import Service from '../../../../src/assets/OurTeam/service.jpg';
 
 const OurTeam = [
     {
@@ -45,11 +45,11 @@ const OurTeam = [
         nameKey: 'aboutUsPage.mech.name',
         altKey: 'aboutUsPage.mech.role',
     },
-    {
-        imgSrc: Service,
-        nameKey: 'aboutUsPage.service.name',
-        altKey: 'aboutUsPage.service.role',
-    },
+    // {
+    //     imgSrc: Service,
+    //     nameKey: 'aboutUsPage.service.name',
+    //     altKey: 'aboutUsPage.service.role',
+    // },
 ];
 
 export default OurTeam;

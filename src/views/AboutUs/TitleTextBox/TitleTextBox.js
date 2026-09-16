@@ -42,7 +42,7 @@ const TitleTextBox = () => {
                             <p>{t('aboutUsPage.RC')}</p>
                         </LilBox>
                         <LilBox>
-                            <span> 100+</span>
+                            <span> 130+</span>
                             <p>{t('aboutUsPage.D/M')}</p>
                         </LilBox>
                     </BigBox>
@@ -51,9 +51,7 @@ const TitleTextBox = () => {
             <Box>
                 <TextBox className="bottom">
                     <ul>
-                        <h3>
-                            {t('aboutUsPage.KeyAdvantages')}
-                        </h3>
+                        <h3>{t('aboutUsPage.KeyAdvantages')}</h3>
                         <p>{t('aboutUsPage.Adv1')}</p>
                         <p>{t('aboutUsPage.Adv2')} </p>
                         <p>{t('aboutUsPage.Adv3')} </p>

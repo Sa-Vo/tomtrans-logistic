@@ -4,7 +4,7 @@ import FormOrder from '../../views/HomePage/components/FormOrder/FormOrder';
 import { Background, CloseModalButton } from './ModalStyled';
 
 export const ModalContent = ({ showModal, setShowModal, formC }) => {
-    const modalRef = useRef();
+const modalRef = useRef();
 
     const animation = useSpring({
         config: {

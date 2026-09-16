@@ -28,11 +28,11 @@ export const TeamList = styled.ul`
     list-style: none;
     @media (min-width: 600px) {
         grid-template-columns: repeat(2, 1fr);
-      }
-      
-      @media (min-width: 900px) {
+    }
+
+    @media (min-width: 900px) {
         grid-template-columns: repeat(4, 1fr);
-      }
+    }
     @media (${palette.device.mobileS}) {
         padding: 0 1rem;
     }
