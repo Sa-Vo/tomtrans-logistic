@@ -12,7 +12,7 @@ const OurTeam = () => {
 
             <TeamList>
                 {dataTeam.map(({ imgSrc, altKey,nameKey }) => (
-                    <TeamMember>
+                    <TeamMember key={nameKey}>
                         <img src={imgSrc} alt={altKey} />
                         <h1>{t(nameKey)}</h1>
                         <p>{t(altKey)}</p>

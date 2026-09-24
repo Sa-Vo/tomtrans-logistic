@@ -26,12 +26,31 @@ export const TeamList = styled.ul`
     grid-auto-rows: auto;
     grid-gap: 3rem;
     list-style: none;
+    justify-content: center;
+
+    // Cards span 2 columns so incomplete rows can be offset by one column and centered
     @media (min-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 150px));
+        column-gap: 1.5rem;
+
+        & > li {
+            grid-column: span 2;
+        }
+        & > li:last-child:nth-child(odd) {
+            grid-column: 2 / span 2;
+        }
     }
 
+    // 4 cards in the first row, 3 centered in the second
     @media (min-width: 900px) {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(8, minmax(0, 150px));
+
+        & > li:last-child:nth-child(odd) {
+            grid-column: auto / span 2;
+        }
+        & > li:nth-child(5) {
+            grid-column: 2 / span 2;
+        }
     }
     @media (${palette.device.mobileS}) {
         padding: 0 1rem;
@@ -50,8 +69,12 @@ export const TeamMember = styled.li`
     }
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
+    width: 100%;
     max-width: 300px;
     margin: auto;
+    img {
+        width: 100%;
+    }
     text-align: center;
     font-family: arial;
     padding-bottom: 2rem;
